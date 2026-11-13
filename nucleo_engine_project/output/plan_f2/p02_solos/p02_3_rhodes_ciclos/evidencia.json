@@ -1,0 +1,54 @@
+{
+  "composicion": "Cámara Lenta",
+  "perfil_produccion": "atmospheric",
+  "seed": 43,
+  "sha256_midi": "bad3f1390793a6e6bdeb18d8ce8b7a2f148e1ced0e6226970d5fc691d2ec5bbb",
+  "sha256_doc": "2fddf1cd5683511166a3373f054b5f46877d205ba2d1a8f556ce2fff160e0a70",
+  "fecha_generacion_utc": "2026-11-12T19:31:27.332610+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 62.0,
+  "compases": 39,
+  "duracion_s": 151.0,
+  "notas_por_pista": {
+    "sax_tenor": 15,
+    "rhodes": 129,
+    "vibraphone": 19,
+    "bass": 101,
+    "drums": 321,
+    "piano": 101,
+    "strings": 102
+  },
+  "compliance_fails": [],
+  "compliance_warns": [],
+  "avisos_compilador": [
+    "W417: chord_bars/harmonic_rhythm_bars (2) no divide los 11 compases de 'verse_1' (último acorde recortado)"
+  ],
+  "resumen_actividad": {
+    "frases_sax": 3,
+    "rhodes_melodico_por_seccion": {
+      "verse_1": 0,
+      "verse_2": 3,
+      "bridge_3": 0,
+      "verse_4": 3
+    },
+    "vibes_eco_por_seccion": {
+      "verse_1": 0,
+      "verse_2": 3,
+      "bridge_3": 0,
+      "verse_4": 3
+    }
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production atmospheric --seed 43 --out /home/z/my-project/nucleo_engine_project/output/plan_f2/p02_solos/p02_3_rhodes_ciclos --verify bad3f1390793a6e6bdeb18d8ce8b7a2f148e1ced0e6226970d5fc691d2ec5bbb",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"p02_3_rhodes_ciclos.mid\" -F salida.wav -r 44100"
+  }
+}

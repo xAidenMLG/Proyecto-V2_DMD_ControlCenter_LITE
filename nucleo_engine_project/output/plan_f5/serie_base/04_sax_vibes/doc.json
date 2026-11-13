@@ -1,0 +1,177 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Ciudad Dormida",
+    "notes": "Automatic — dark_triphop en G# minor (hybrid), 88 compases a 70 BPM: intro_1 (intro, 7), verse_2 (verse, 11), pre_chorus_3 (pre_chorus, 6), chorus_4 (chorus, 13), break_5 (break, 11), bridge_6 (bridge, 9), verse_7 (verse, 11), chorus_8 (chorus, 13), outro_9 (outro, 7), fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "dark_triphop",
+    "accessibility": "balanced"
+  },
+  "global": {
+    "bpm": 70,
+    "seed": 172484
+  },
+  "harmony": {
+    "key": "G# minor",
+    "language": "hybrid",
+    "harmonic_rhythm_bars": 1,
+    "progressions": {
+      "break": [
+        "Abm9",
+        "Emaj7"
+      ],
+      "bridge": [
+        "Emaj7",
+        "Bmaj9"
+      ],
+      "chorus": [
+        "Emaj9",
+        "Bmaj9",
+        "Dbm9",
+        "Eb7sus4"
+      ],
+      "intro": [
+        "Abm9"
+      ],
+      "outro": [
+        "Abm9"
+      ],
+      "pre_chorus": [
+        "Dbm9",
+        "Eb7sus4"
+      ],
+      "verse": [
+        "Abm9",
+        "Emaj9",
+        "Dbm9",
+        "Eb7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "intro_1",
+      "type": "intro",
+      "bars": 7,
+      "energy": 0.24,
+      "tension": 0.2,
+      "density": 0.25,
+      "focus": [
+        "rhodes",
+        "pad"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 11,
+      "energy": 0.44,
+      "tension": 0.35,
+      "density": 0.45,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "pre_chorus_3",
+      "type": "pre_chorus",
+      "bars": 6,
+      "energy": 0.59,
+      "tension": 0.55,
+      "density": 0.55,
+      "focus": [
+        "pad",
+        "vibraphone"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "chorus_4",
+      "type": "chorus",
+      "bars": 13,
+      "energy": 0.79,
+      "tension": 0.5,
+      "density": 0.65,
+      "focus": [
+        "sax_tenor",
+        "drums",
+        "bass"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "break_5",
+      "type": "break",
+      "bars": 11,
+      "energy": 0.34,
+      "tension": 0.6,
+      "density": 0.35,
+      "focus": [
+        "vibraphone"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "bridge_6",
+      "type": "bridge",
+      "bars": 9,
+      "energy": 0.54,
+      "tension": 0.6,
+      "density": 0.55,
+      "focus": [
+        "rhodes",
+        "vibraphone"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "verse_7",
+      "type": "verse",
+      "bars": 11,
+      "energy": 0.44,
+      "tension": 0.35,
+      "density": 0.45,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "chorus_8",
+      "type": "chorus",
+      "bars": 13,
+      "energy": 0.79,
+      "tension": 0.5,
+      "density": 0.65,
+      "focus": [
+        "sax_tenor",
+        "drums",
+        "bass"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "outro_9",
+      "type": "outro",
+      "bars": 7,
+      "energy": 0.19,
+      "tension": 0.15,
+      "density": 0.2,
+      "focus": [
+        "rhodes"
+      ],
+      "drums": "off"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "composicion": "Calles de Ceniza",
+  "perfil_produccion": "atmospheric",
+  "seed": 202,
+  "sha256_midi": "86887fcbe8e7372283553444d02709d22c18c4bc0c8f1e37da27119e78bc9a1e",
+  "sha256_doc": "c7ee7849e88819c471ea67b4a60bec475022b1bddb6c58cc5afb53038f08c203",
+  "fecha_generacion_utc": "2026-11-12T16:45:15.528988+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 64.0,
+  "compases": 48,
+  "duracion_s": 180.0,
+  "notas_por_pista": {
+    "sax_tenor": 31,
+    "rhodes": 131,
+    "vibraphone": 20,
+    "bass": 106,
+    "drums": 445,
+    "piano": 93,
+    "strings": 85
+  },
+  "compliance_fails": [],
+  "compliance_warns": [],
+  "avisos_compilador": [],
+  "resumen_actividad": {
+    "frases_sax": 4,
+    "rhodes_melodico_por_seccion": {
+      "vuelta_a1": 2,
+      "vuelta_a2": 2,
+      "vuelta_b1": 0,
+      "vuelta_a3": 3,
+      "solo_rhodes": 3,
+      "cierre_o": 0
+    },
+    "vibes_eco_por_seccion": {
+      "vuelta_a1": 3,
+      "vuelta_a2": 0,
+      "vuelta_b1": 0,
+      "vuelta_a3": 0,
+      "solo_rhodes": 0,
+      "cierre_o": 0
+    }
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production atmospheric --seed 202 --out output/plan_f1/calles_de_ceniza_202 --verify 86887fcbe8e7372283553444d02709d22c18c4bc0c8f1e37da27119e78bc9a1e",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"calles_de_ceniza_202.mid\" -F salida.wav -r 44100"
+  }
+}

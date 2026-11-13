@@ -1,0 +1,235 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 44,
+  "title": "Búnker de Sal",
+  "identity": {
+    "style": "doom_triphop",
+    "accessibility": "balanced",
+    "protagonist": "vibraphone",
+    "palette": [
+      "full"
+    ]
+  },
+  "controls": {
+    "energia": "muy_alta",
+    "drums": "presente",
+    "forma": "libre",
+    "duracion": "corta",
+    "armonia": "crudo",
+    "pulso": "swing"
+  },
+  "album_context": null,
+  "form": {
+    "template": "libre",
+    "sections": [
+      {
+        "id": "intro_1",
+        "type": "intro",
+        "bars": 9,
+        "energy": 0.61,
+        "tension": 0.43,
+        "density": 0.36,
+        "focus": [
+          "vibraphone",
+          "pad",
+          "strings"
+        ],
+        "drums": "air",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 15,
+        "energy": 0.81,
+        "tension": 0.58,
+        "density": 0.56,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "bridge_3",
+        "type": "bridge",
+        "bars": 12,
+        "energy": 0.86,
+        "tension": 0.78,
+        "density": 0.61,
+        "focus": [
+          "vibraphone"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "outro_4",
+        "type": "outro",
+        "bars": 9,
+        "energy": 0.56,
+        "tension": 0.38,
+        "density": 0.31,
+        "focus": [
+          "strings",
+          "rhodes"
+        ],
+        "drums": "air",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "G# minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Abm9",
+        "Emaj7"
+      ],
+      "bridge": [
+        "Emaj7",
+        "Bmaj9"
+      ],
+      "chorus": [
+        "Emaj9",
+        "Bmaj9",
+        "Dbm9",
+        "Eb7sus4"
+      ],
+      "intro": [
+        "Abm9"
+      ],
+      "outro": [
+        "Abm9"
+      ],
+      "pre_chorus": [
+        "Dbm9",
+        "Eb7sus4"
+      ],
+      "verse": [
+        "Abm9",
+        "Emaj9",
+        "Dbm9",
+        "Eb7sus4"
+      ]
+    }
+  },
+  "solos": [
+    {
+      "section_id": "bridge_3",
+      "instrument": "vibraphone"
+    }
+  ],
+  "orchestration": {
+    "profile": "full"
+  },
+  "global": {
+    "bpm": 72
+  },
+  "duration": {
+    "target": "corta",
+    "bars_total": 45
+  },
+  "notes": "Automatic — doom_triphop en G# minor (experimental), 45 compases a 72 BPM: intro_1 (intro, 9), verse_2 (verse, 15), bridge_3 (bridge, 12), outro_4 (outro, 9); solo de vibraphone en bridge_3, fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "controls.pulso",
+        "regla": "R29",
+        "entrada": "pulso=auto",
+        "detalle": "pulso de la casa: 'swing'; el tempo lo fija BPM_DEFAULT de la receta (R11)"
+      },
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=swing",
+        "detalle": "pulso auto → BPM_DEFAULT de la receta doom_triphop = 72 (§3.1)"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='corta', bpm=72",
+        "detalle": "45 compases ≈ 2.5 min (banda 'corta')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=libre, bars_total=45",
+        "detalle": "esqueleto de 4 secciones ['intro', 'verse', 'bridge', 'outro'] con reparto [9, 15, 12, 9] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=crudo",
+        "detalle": "tabla declarativa → 'experimental' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta doom_triphop = 2 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=44",
+        "detalle": "'G# minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='G# minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "solos",
+        "regla": "R22",
+        "entrada": "energia=muy_alta, protagonista=vibraphone",
+        "detalle": "solo de vibraphone en bridge_3 (type=bridge; vía focus[] + comportamiento de motores, §9.2)"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=presente, energia=muy_alta, palette=None",
+        "detalle": "'full' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "identity.palette",
+        "regla": "R24",
+        "entrada": "no aportada",
+        "detalle": "paleta mínima ['full']: el perfil elegido queda incluido (§9.2)"
+      },
+      {
+        "campo": "form.sections[].focus",
+        "regla": "R25",
+        "entrada": "protagonista=vibraphone",
+        "detalle": "añadido a focus de ['intro_1'] (≥2 secciones, §6.2)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de outro_4, E112)"
+      },
+      {
+        "campo": "title",
+        "regla": "R27",
+        "entrada": "seed=44",
+        "detalle": "título auto-generado 'Búnker de Sal' (metadata sin consumidor musical, §9.2)"
+      }
+    ],
+    "inputs_hash": "sha256:6bc8d7c66faea954b5d81678c039d570efd48742f4cfe570c411de1a6049dad6",
+    "created_at": "2026-11-13T00:00:00Z"
+  }
+}

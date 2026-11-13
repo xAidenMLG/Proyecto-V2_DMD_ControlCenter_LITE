@@ -1,0 +1,16 @@
+{
+  "intencion": {
+    "identity": {
+      "style": "dark_triphop",
+      "accessibility": "balanced",
+      "protagonist": "sax_tenor"
+    },
+    "controls": {
+      "duracion": "corta",
+      "forma": "cancion"
+    }
+  },
+  "wav": false,
+  "soundfont": "",
+  "out_dir": "/home/z/my-project/nucleo_engine_project/studio_data/projects/f3_golden_11dc4e/generations/gen_0001/guided_song"
+}

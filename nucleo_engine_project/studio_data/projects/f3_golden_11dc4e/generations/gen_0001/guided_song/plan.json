@@ -1,0 +1,262 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 721106,
+  "title": "Sala de Espera",
+  "identity": {
+    "style": "dark_triphop",
+    "accessibility": "balanced",
+    "protagonist": "sax_tenor",
+    "palette": [
+      "full"
+    ]
+  },
+  "controls": {
+    "energia": "media",
+    "drums": "presente",
+    "forma": "cancion",
+    "duracion": "corta",
+    "armonia": "jazz",
+    "pulso": "swing"
+  },
+  "album_context": null,
+  "form": {
+    "template": "cancion",
+    "sections": [
+      {
+        "id": "intro_1",
+        "type": "intro",
+        "bars": 9,
+        "energy": 0.24,
+        "tension": 0.2,
+        "density": 0.25,
+        "focus": [
+          "rhodes",
+          "pad"
+        ],
+        "drums": "air",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 14,
+        "energy": 0.44,
+        "tension": 0.35,
+        "density": 0.45,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "pre_chorus_3",
+        "type": "pre_chorus",
+        "bars": 7,
+        "energy": 0.59,
+        "tension": 0.55,
+        "density": 0.55,
+        "focus": [
+          "pad",
+          "vibraphone"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "chorus_4",
+        "type": "chorus",
+        "bars": 16,
+        "energy": 0.79,
+        "tension": 0.5,
+        "density": 0.65,
+        "focus": [
+          "sax_tenor",
+          "drums",
+          "bass"
+        ],
+        "drums": "heavy",
+        "locked": false
+      },
+      {
+        "id": "outro_5",
+        "type": "outro",
+        "bars": 8,
+        "energy": 0.41,
+        "tension": 0.15,
+        "density": 0.2,
+        "focus": [
+          "rhodes"
+        ],
+        "drums": "air",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "D minor",
+    "language": "hybrid",
+    "harmonic_rhythm_bars": 1,
+    "progressions": {
+      "break": [
+        "Dm9",
+        "Bbmaj7"
+      ],
+      "bridge": [
+        "Bbmaj7",
+        "Fmaj9"
+      ],
+      "chorus": [
+        "Bbmaj9",
+        "Fmaj9",
+        "Gm9",
+        "A7sus4"
+      ],
+      "intro": [
+        "Dm9"
+      ],
+      "outro": [
+        "Dm9"
+      ],
+      "pre_chorus": [
+        "Gm9",
+        "A7sus4"
+      ],
+      "verse": [
+        "Dm9",
+        "Bbmaj9",
+        "Gm9",
+        "A7sus4"
+      ]
+    }
+  },
+  "solos": [],
+  "orchestration": {
+    "profile": "full"
+  },
+  "global": {
+    "bpm": 86
+  },
+  "duration": {
+    "target": "corta",
+    "bars_total": 54
+  },
+  "notes": "Automatic — dark_triphop en D minor (hybrid), 54 compases a 86 BPM: intro_1 (intro, 9), verse_2 (verse, 14), pre_chorus_3 (pre_chorus, 7), chorus_4 (chorus, 16), outro_5 (outro, 8), fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "controls.energia",
+        "regla": "R1",
+        "entrada": "no aportado",
+        "detalle": "default declarativo: 'media' (§7.2.2)"
+      },
+      {
+        "campo": "controls.drums",
+        "regla": "R2",
+        "entrada": "energia=media",
+        "detalle": "default declarativo: 'presente' (§7.1: interacción energía-drums)"
+      },
+      {
+        "campo": "controls.armonia",
+        "regla": "R6",
+        "entrada": "armonia=auto, accessibility=balanced",
+        "detalle": "tabla declarativa por accesibilidad → 'jazz' (§7.2.2)"
+      },
+      {
+        "campo": "controls.pulso",
+        "regla": "R29",
+        "entrada": "pulso=auto",
+        "detalle": "pulso de la casa: 'swing'; el tempo lo fija BPM_DEFAULT de la receta (R11)"
+      },
+      {
+        "campo": "seed",
+        "regla": "R0",
+        "entrada": "no aportada",
+        "detalle": "seed auto-generada 721106 por sha256 de identidad+controles (§9.2, §7.2.5; intérprete puro, reproducible)"
+      },
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=swing",
+        "detalle": "pulso auto → BPM_DEFAULT de la receta dark_triphop = 86 (§3.1)"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='corta', bpm=86",
+        "detalle": "54 compases ≈ 2.5 min (banda 'corta')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=cancion, bars_total=54",
+        "detalle": "esqueleto de 5 secciones ['intro', 'verse', 'pre_chorus', 'chorus', 'outro'] con reparto [9, 14, 7, 16, 8] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "sections[outro_5].energy",
+        "regla": "R20",
+        "entrada": "salto 0.60 chorus_4→outro_5",
+        "detalle": "suavizado a ±0.38 para V115 (≤0.4 entre vecinas, §6.5)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=jazz",
+        "detalle": "tabla declarativa → 'hybrid' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta dark_triphop = 1 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=721106",
+        "detalle": "'D minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='D minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=presente, energia=media, palette=None",
+        "detalle": "'full' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "identity.palette",
+        "regla": "R24",
+        "entrada": "no aportada",
+        "detalle": "paleta mínima ['full']: el perfil elegido queda incluido (§9.2)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de outro_5, E112)"
+      },
+      {
+        "campo": "title",
+        "regla": "R27",
+        "entrada": "seed=721106",
+        "detalle": "título auto-generado 'Sala de Espera' (metadata sin consumidor musical, §9.2)"
+      }
+    ],
+    "inputs_hash": "sha256:726f3d10bcd5eb5483540ec7ce7e9e392e29e2a93ab8a9ec79627307e9e10aa2",
+    "created_at": "2026-11-12T21:07:39Z"
+  }
+}

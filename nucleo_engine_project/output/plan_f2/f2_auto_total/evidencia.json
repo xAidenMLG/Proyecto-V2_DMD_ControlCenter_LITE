@@ -1,0 +1,65 @@
+{
+  "composicion": "Alba Tardía",
+  "perfil_produccion": "full",
+  "seed": 320569,
+  "sha256_midi": "af57c752252d4280cda9a819eeb8e4d817ea9df2739d34e9c39700a9a2378974",
+  "sha256_doc": "5c558b2439eca13bd099fa2b7be8322657ece42768d81812b0a25252c24a8baa",
+  "fecha_generacion_utc": "2026-11-12T19:31:26.497629+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 86.0,
+  "compases": 108,
+  "duracion_s": 301.4,
+  "notas_por_pista": {
+    "sax_tenor": 27,
+    "rhodes": 261,
+    "vibraphone": 28,
+    "bass": 282,
+    "drums": 876,
+    "pad": 188
+  },
+  "compliance_fails": [],
+  "compliance_warns": [
+    "motif_repeat"
+  ],
+  "avisos_compilador": [
+    "W404: commercial sin material de hook en ningún chorus (ni phrases, ni motif, ni loop_bars)"
+  ],
+  "resumen_actividad": {
+    "frases_sax": 4,
+    "rhodes_melodico_por_seccion": {
+      "intro_1": 2,
+      "verse_2": 2,
+      "pre_chorus_3": 0,
+      "chorus_4": 0,
+      "break_5": 0,
+      "bridge_6": 0,
+      "verse_7": 2,
+      "chorus_8": 0,
+      "outro_9": 0
+    },
+    "vibes_eco_por_seccion": {
+      "intro_1": 0,
+      "verse_2": 1,
+      "pre_chorus_3": 0,
+      "chorus_4": 0,
+      "break_5": 0,
+      "bridge_6": 0,
+      "verse_7": 0,
+      "chorus_8": 0,
+      "outro_9": 0
+    }
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production full --seed 320569 --out /home/z/my-project/nucleo_engine_project/output/plan_f2/f2_auto_total --verify af57c752252d4280cda9a819eeb8e4d817ea9df2739d34e9c39700a9a2378974",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"f2_auto_total.mid\" -F salida.wav -r 44100"
+  }
+}

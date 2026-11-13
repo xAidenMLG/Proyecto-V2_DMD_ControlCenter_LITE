@@ -1,0 +1,177 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Alba Tardía",
+    "notes": "Automatic — dark_triphop en C# minor (pop_dream_pop), 108 compases a 86 BPM: intro_1 (intro, 8), verse_2 (verse, 14), pre_chorus_3 (pre_chorus, 7), chorus_4 (chorus, 16), break_5 (break, 14), bridge_6 (bridge, 11), verse_7 (verse, 14), chorus_8 (chorus, 16), outro_9 (outro, 8), fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "dark_triphop",
+    "accessibility": "commercial"
+  },
+  "global": {
+    "bpm": 86,
+    "seed": 320569
+  },
+  "harmony": {
+    "key": "C# minor",
+    "language": "pop_dream_pop",
+    "harmonic_rhythm_bars": 1,
+    "progressions": {
+      "break": [
+        "Dbm9",
+        "Amaj7"
+      ],
+      "bridge": [
+        "Amaj7",
+        "Emaj9"
+      ],
+      "chorus": [
+        "Amaj9",
+        "Emaj9",
+        "Gbm9",
+        "Ab7sus4"
+      ],
+      "intro": [
+        "Dbm9"
+      ],
+      "outro": [
+        "Dbm9"
+      ],
+      "pre_chorus": [
+        "Gbm9",
+        "Ab7sus4"
+      ],
+      "verse": [
+        "Dbm9",
+        "Amaj9",
+        "Gbm9",
+        "Ab7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "intro_1",
+      "type": "intro",
+      "bars": 8,
+      "energy": 0.24,
+      "tension": 0.15,
+      "density": 0.22,
+      "focus": [
+        "rhodes",
+        "pad"
+      ],
+      "drums": "air"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 14,
+      "energy": 0.44,
+      "tension": 0.3,
+      "density": 0.42,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "pre_chorus_3",
+      "type": "pre_chorus",
+      "bars": 7,
+      "energy": 0.59,
+      "tension": 0.5,
+      "density": 0.52,
+      "focus": [
+        "pad",
+        "vibraphone"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "chorus_4",
+      "type": "chorus",
+      "bars": 16,
+      "energy": 0.79,
+      "tension": 0.45,
+      "density": 0.62,
+      "focus": [
+        "sax_tenor",
+        "drums",
+        "bass"
+      ],
+      "drums": "heavy"
+    },
+    {
+      "id": "break_5",
+      "type": "break",
+      "bars": 14,
+      "energy": 0.41,
+      "tension": 0.55,
+      "density": 0.32,
+      "focus": [
+        "vibraphone"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "bridge_6",
+      "type": "bridge",
+      "bars": 11,
+      "energy": 0.54,
+      "tension": 0.55,
+      "density": 0.52,
+      "focus": [
+        "rhodes",
+        "vibraphone"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "verse_7",
+      "type": "verse",
+      "bars": 14,
+      "energy": 0.44,
+      "tension": 0.3,
+      "density": 0.42,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "chorus_8",
+      "type": "chorus",
+      "bars": 16,
+      "energy": 0.79,
+      "tension": 0.45,
+      "density": 0.62,
+      "focus": [
+        "sax_tenor",
+        "drums",
+        "bass"
+      ],
+      "drums": "heavy"
+    },
+    {
+      "id": "outro_9",
+      "type": "outro",
+      "bars": 8,
+      "energy": 0.41,
+      "tension": 0.1,
+      "density": 0.17,
+      "focus": [
+        "rhodes"
+      ],
+      "drums": "air"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

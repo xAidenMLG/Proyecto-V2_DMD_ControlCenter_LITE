@@ -1,0 +1,196 @@
+{
+  "schema": "dmd-album-informe/1",
+  "album": "Ecos de Neblina",
+  "generado_utc": "2026-11-13T05:19:55.668714+00:00",
+  "resumen": {
+    "pistas_totales": 3,
+    "ok": 3,
+    "fallo": 0,
+    "no_ejecutadas": 0,
+    "duracion_total_s": 750.0,
+    "avisos_plan": []
+  },
+  "pistas": [
+    {
+      "indice": 1,
+      "id": "umbral_de_neblina",
+      "titulo": "Umbral de Neblina",
+      "estado": "ok",
+      "razon": null,
+      "error": null,
+      "perfil": "atmospheric",
+      "perfil_origen": "especificado",
+      "seed": 9000,
+      "seed_origen": "especificado",
+      "harmony": null,
+      "bpm": 80,
+      "tonalidad": "F minor",
+      "compases": 50,
+      "duracion_s": 150.0,
+      "sha256_midi": "51bb6a6b8f3a11ecdc07ae9a214d49df4617b2d0ded14eebd7e70d0a3c6ce569",
+      "sha256_doc": "ca01f668fd4c907e68d8df4397bef73a136fd68bb109b849262a4814781851aa",
+      "compliance_fails": [],
+      "compliance_warns": [
+        "motif_repeat"
+      ],
+      "carpeta": "output/plan_f4/ecos_de_neblina/01_umbral_de_neblina"
+    },
+    {
+      "indice": 2,
+      "id": "camara_de_espejos",
+      "titulo": "Cámara de Espejos",
+      "estado": "ok",
+      "razon": null,
+      "error": null,
+      "perfil": "full",
+      "perfil_origen": "especificado",
+      "seed": 9101,
+      "seed_origen": "especificado",
+      "harmony": null,
+      "bpm": 80,
+      "tonalidad": "Bb minor",
+      "compases": 100,
+      "duracion_s": 300.0,
+      "sha256_midi": "511227d31a8ac2db2391390935e1a2592799646f7df4e2cb8a1e630915f02c6f",
+      "sha256_doc": "9274d13e4be0bd48c1aee1ea2ca24ccf27f7b1c972d20e2a5dda362b037a401c",
+      "compliance_fails": [],
+      "compliance_warns": [
+        "motif_repeat"
+      ],
+      "carpeta": "output/plan_f4/ecos_de_neblina/02_camara_de_espejos"
+    },
+    {
+      "indice": 3,
+      "id": "marea_baja_de_neon",
+      "titulo": "Marea Baja de Neón",
+      "estado": "ok",
+      "razon": null,
+      "error": null,
+      "perfil": "sax_rhodes",
+      "perfil_origen": "especificado",
+      "seed": 9202,
+      "seed_origen": "especificado",
+      "harmony": null,
+      "bpm": 80,
+      "tonalidad": "F minor",
+      "compases": 100,
+      "duracion_s": 300.0,
+      "sha256_midi": "4b590b654666fba467df32196fbdaab1100b378b952a35cd5fca75d58d029893",
+      "sha256_doc": "b11bb25d4ff2aae556a1971ea851085f2f68c5001eed20418de05889eed9f8e9",
+      "compliance_fails": [],
+      "compliance_warns": [
+        "motif_repeat"
+      ],
+      "carpeta": "output/plan_f4/ecos_de_neblina/03_marea_baja_de_neon"
+    }
+  ],
+  "diversidad": {
+    "pre": {
+      "perfiles": {
+        "atmospheric": 1,
+        "full": 1,
+        "sax_rhodes": 1
+      },
+      "frac_max_config": 0.4,
+      "exceso_perfil": [],
+      "respiro_cada": 5,
+      "ventanas_sin_respiro": [],
+      "consecutivos_iguales": [],
+      "tonalidades_pegadas": [],
+      "bpm_fuera_de_rango": [],
+      "bpm_rango_sano": [
+        76,
+        92
+      ],
+      "distancia_tonal_consecutivas": [
+        5,
+        5
+      ]
+    },
+    "post": {
+      "duplicados_exactos": [],
+      "similares_sospechosos": [],
+      "umbral_similitud": 0.85,
+      "pares_analizados": 3
+    },
+    "curva_energia": {
+      "objetivo": [
+        0.45,
+        0.78,
+        0.15
+      ],
+      "real": [
+        0.494,
+        0.699,
+        0.229
+      ],
+      "desviacion": [
+        0.044,
+        0.081,
+        0.079
+      ]
+    }
+  },
+  "coherencia": {
+    "identidad": "dark_triphop",
+    "identidad_ok": true,
+    "tonalidades": [
+      "Bb minor",
+      "F minor"
+    ],
+    "bpm_valores": [
+      80
+    ],
+    "bpm_rango_referencia": [
+      76,
+      92
+    ],
+    "bpm_todos_en_rango": true,
+    "distancia_tonal_consecutivas": [
+      5,
+      5
+    ],
+    "tonalidades_pegadas": []
+  },
+  "tecnico_vs_musical": {
+    "metricas_tecnicas": [
+      "duplicados exactos por SHA256 del MIDI",
+      "similitud material por Jaccard de huellas (umbral 0.85)",
+      "distribución y fracción de perfiles",
+      "variedad en consecutivas (perfil+tonalidad+BPM)",
+      "ventanas de respiro",
+      "rango de BPM de referencia",
+      "distancia tonal entre consecutivas",
+      "adherencia a curva de energía",
+      "compliance del validador de forge por pista"
+    ],
+    "pendiente_escucha": [
+      "coherencia de identidad audible entre pistas",
+      "fatiga de densidad o saturación de perfiles",
+      "naturalidad de las transiciones entre pistas (orden de reproducción)",
+      "calidad de las progresiones familiares activadas (si las hay)",
+      "equilibrio sax/Rhodes/vibes/batería en el conjunto"
+    ]
+  },
+  "reproducibilidad": {
+    "semilla_album": 8899,
+    "versiones": {
+      "album": "8.0.0",
+      "jazz_engine": "7.0.0",
+      "contrato": {
+        "contract": "dark-director/1",
+        "contract_rev": "3.2",
+        "compiler_version": "0.1.0",
+        "compiler_stage": "fase1",
+        "target_schema": "midi-forge/1"
+      }
+    },
+    "regenerar_album": "python3 -m album producir /home/z/my-project/nucleo_engine_project/albumes/ecos_de_neblina/album.json --out output/plan_f4/ecos_de_neblina --forzar",
+    "regenerar_pistas": {
+      "umbral_de_neblina": "python3 scripts/produce.py output/plan_f4/ecos_de_neblina/01_umbral_de_neblina/doc.json --production atmospheric --seed 9000 --out output/plan_f4/ecos_de_neblina/01_umbral_de_neblina --verify 51bb6a6b8f3a11ecdc07ae9a214d49df4617b2d0ded14eebd7e70d0a3c6ce569",
+      "camara_de_espejos": "python3 scripts/produce.py output/plan_f4/ecos_de_neblina/02_camara_de_espejos/doc.json --production full --seed 9101 --out output/plan_f4/ecos_de_neblina/02_camara_de_espejos --verify 511227d31a8ac2db2391390935e1a2592799646f7df4e2cb8a1e630915f02c6f",
+      "marea_baja_de_neon": "python3 scripts/produce.py output/plan_f4/ecos_de_neblina/03_marea_baja_de_neon/doc.json --production sax_rhodes --seed 9202 --out output/plan_f4/ecos_de_neblina/03_marea_baja_de_neon --verify 4b590b654666fba467df32196fbdaab1100b378b952a35cd5fca75d58d029893"
+    },
+    "manifiesto": "manifiesto.json"
+  }
+}

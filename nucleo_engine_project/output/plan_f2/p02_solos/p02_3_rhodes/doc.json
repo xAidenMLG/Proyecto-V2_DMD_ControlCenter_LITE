@@ -1,0 +1,114 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Cámara Lenta",
+    "notes": "Automatic — doom_dark_jazz en G minor (experimental), 39 compases a 62 BPM: intro_1 (intro, 7), verse_2 (verse, 11), chorus_3 (chorus, 14), outro_4 (outro, 7), fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "doom_dark_jazz",
+    "accessibility": "balanced"
+  },
+  "global": {
+    "bpm": 62,
+    "seed": 43
+  },
+  "harmony": {
+    "key": "G minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Gm9",
+        "Ebmaj7"
+      ],
+      "bridge": [
+        "Ebmaj7",
+        "Bbmaj9"
+      ],
+      "chorus": [
+        "Ebmaj9",
+        "Bbmaj9",
+        "Cm9",
+        "D7sus4"
+      ],
+      "intro": [
+        "Gm9"
+      ],
+      "outro": [
+        "Gm9"
+      ],
+      "pre_chorus": [
+        "Cm9",
+        "D7sus4"
+      ],
+      "verse": [
+        "Gm9",
+        "Ebmaj9",
+        "Cm9",
+        "D7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "intro_1",
+      "type": "intro",
+      "bars": 7,
+      "energy": 0.45,
+      "tension": 0.57,
+      "density": 0.18,
+      "focus": [
+        "rhodes",
+        "strings",
+        "bass"
+      ],
+      "drums": "air"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 11,
+      "energy": 0.65,
+      "tension": 0.67,
+      "density": 0.38,
+      "focus": [
+        "sax_tenor",
+        "rhodes"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "chorus_3",
+      "type": "chorus",
+      "bars": 14,
+      "energy": 0.95,
+      "tension": 0.67,
+      "density": 0.58,
+      "focus": [
+        "sax_tenor",
+        "bass",
+        "drums"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "outro_4",
+      "type": "outro",
+      "bars": 7,
+      "energy": 0.57,
+      "tension": 0.47,
+      "density": 0.15,
+      "focus": [
+        "strings",
+        "vibraphone"
+      ],
+      "drums": "air"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

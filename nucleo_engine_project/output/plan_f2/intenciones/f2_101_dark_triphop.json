@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "style": "dark_triphop",
+    "accessibility": "balanced",
+    "protagonist": "sax_tenor"
+  },
+  "controls": {
+    "energia": "media",
+    "forma": "cancion",
+    "duracion": "corta",
+    "armonia": "nocturno",
+    "pulso": "swing",
+    "drums": "presente"
+  },
+  "seed": 101
+}

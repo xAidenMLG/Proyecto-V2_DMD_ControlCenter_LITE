@@ -1,0 +1,112 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Búnker de Sal",
+    "notes": "Automatic — doom_triphop en G# minor (experimental), 45 compases a 72 BPM: intro_1 (intro, 9), verse_2 (verse, 15), bridge_3 (bridge, 12), outro_4 (outro, 9); solo de vibraphone en bridge_3, fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "doom_triphop",
+    "accessibility": "balanced"
+  },
+  "global": {
+    "bpm": 72,
+    "seed": 44
+  },
+  "harmony": {
+    "key": "G# minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Abm9",
+        "Emaj7"
+      ],
+      "bridge": [
+        "Emaj7",
+        "Bmaj9"
+      ],
+      "chorus": [
+        "Emaj9",
+        "Bmaj9",
+        "Dbm9",
+        "Eb7sus4"
+      ],
+      "intro": [
+        "Abm9"
+      ],
+      "outro": [
+        "Abm9"
+      ],
+      "pre_chorus": [
+        "Dbm9",
+        "Eb7sus4"
+      ],
+      "verse": [
+        "Abm9",
+        "Emaj9",
+        "Dbm9",
+        "Eb7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "intro_1",
+      "type": "intro",
+      "bars": 9,
+      "energy": 0.61,
+      "tension": 0.43,
+      "density": 0.36,
+      "focus": [
+        "vibraphone",
+        "pad",
+        "strings"
+      ],
+      "drums": "air"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 15,
+      "energy": 0.81,
+      "tension": 0.58,
+      "density": 0.56,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "bridge_3",
+      "type": "bridge",
+      "bars": 12,
+      "energy": 0.86,
+      "tension": 0.78,
+      "density": 0.61,
+      "focus": [
+        "vibraphone"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "outro_4",
+      "type": "outro",
+      "bars": 9,
+      "energy": 0.56,
+      "tension": 0.38,
+      "density": 0.31,
+      "focus": [
+        "strings",
+        "rhodes"
+      ],
+      "drums": "air"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

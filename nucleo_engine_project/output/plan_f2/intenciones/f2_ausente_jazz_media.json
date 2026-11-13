@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "style": "doom_dark_jazz",
+    "accessibility": "balanced",
+    "protagonist": "vibraphone"
+  },
+  "controls": {
+    "energia": "media",
+    "forma": "cancion",
+    "duracion": "media",
+    "armonia": "jazz",
+    "pulso": "latin",
+    "drums": "ausente"
+  },
+  "seed": 808
+}

@@ -1,0 +1,55 @@
+{
+  "composicion": "Cuartos de Marea",
+  "perfil_produccion": "full",
+  "seed": 101,
+  "sha256_midi": "9d9d293186f652308e322983878f306436d07e440849cf04c3509be9a5f2ffe1",
+  "sha256_doc": "69f1b089811a918af3a15b6631b27af27a35bdf4792261651ec46865599ed2d3",
+  "fecha_generacion_utc": "2026-11-12T16:45:15.366994+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 72.0,
+  "compases": 32,
+  "duracion_s": 106.7,
+  "notas_por_pista": {
+    "sax_tenor": 10,
+    "rhodes": 79,
+    "vibraphone": 6,
+    "bass": 80,
+    "drums": 317,
+    "pad": 27
+  },
+  "compliance_fails": [],
+  "compliance_warns": [
+    "motif_repeat"
+  ],
+  "avisos_compilador": [],
+  "resumen_actividad": {
+    "frases_sax": 3,
+    "rhodes_melodico_por_seccion": {
+      "intro": 3,
+      "verso_a": 3,
+      "coro_a": 0,
+      "verso_b": 0,
+      "outro": 0
+    },
+    "vibes_eco_por_seccion": {
+      "intro": 0,
+      "verso_a": 0,
+      "coro_a": 0,
+      "verso_b": 0,
+      "outro": 0
+    }
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production full --seed 101 --out output/plan_f1/cuartos_de_marea_101 --verify 9d9d293186f652308e322983878f306436d07e440849cf04c3509be9a5f2ffe1",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"cuartos_de_marea_101.mid\" -F salida.wav -r 44100"
+  }
+}

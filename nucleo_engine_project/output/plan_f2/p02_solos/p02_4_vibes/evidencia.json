@@ -1,0 +1,56 @@
+{
+  "composicion": "Búnker de Sal",
+  "perfil_produccion": "full",
+  "seed": 44,
+  "sha256_midi": "4c4ba89777a85f19de90234625446e23e3928e366dc52349516f9838c99e8320",
+  "sha256_doc": "d619cea01db3d7dca51d3171521c83f4e8e54d49f84e05be8601fe768163e60d",
+  "fecha_generacion_utc": "2026-11-12T19:31:27.393398+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 72.0,
+  "compases": 45,
+  "duracion_s": 150.0,
+  "notas_por_pista": {
+    "sax_tenor": 3,
+    "rhodes": 75,
+    "vibraphone": 8,
+    "bass": 69,
+    "drums": 222,
+    "pad": 54,
+    "strings": 69
+  },
+  "compliance_fails": [],
+  "compliance_warns": [],
+  "avisos_compilador": [
+    "W417: chord_bars/harmonic_rhythm_bars (2) no divide los 9 compases de 'intro_1' (último acorde recortado)",
+    "W417: chord_bars/harmonic_rhythm_bars (2) no divide los 15 compases de 'verse_2' (último acorde recortado)",
+    "W417: chord_bars/harmonic_rhythm_bars (2) no divide los 9 compases de 'outro_4' (último acorde recortado)"
+  ],
+  "resumen_actividad": {
+    "frases_sax": 1,
+    "rhodes_melodico_por_seccion": {
+      "intro_1": 0,
+      "verse_2": 0,
+      "bridge_3": 0,
+      "outro_4": 0
+    },
+    "vibes_eco_por_seccion": {
+      "intro_1": 0,
+      "verse_2": 0,
+      "bridge_3": 0,
+      "outro_4": 0
+    }
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production full --seed 44 --out /home/z/my-project/nucleo_engine_project/output/plan_f2/p02_solos/p02_4_vibes --verify 4c4ba89777a85f19de90234625446e23e3928e366dc52349516f9838c99e8320",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"p02_4_vibes.mid\" -F salida.wav -r 44100"
+  }
+}

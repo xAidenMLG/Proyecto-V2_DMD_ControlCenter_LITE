@@ -1,0 +1,300 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 436439,
+  "title": "Último Tren",
+  "identity": {
+    "style": "doom_triphop",
+    "accessibility": "balanced",
+    "protagonist": "vibraphone",
+    "palette": [
+      "atmospheric"
+    ]
+  },
+  "controls": {
+    "energia": "baja",
+    "drums": "contenida",
+    "forma": "ciclos",
+    "duracion": "media",
+    "armonia": "jazz",
+    "pulso": "swing"
+  },
+  "album_context": null,
+  "form": {
+    "template": "ciclos",
+    "sections": [
+      {
+        "id": "intro_1",
+        "type": "intro",
+        "bars": 8,
+        "energy": 0.11,
+        "tension": 0.35,
+        "density": 0.17,
+        "focus": [
+          "pad",
+          "strings"
+        ],
+        "drums": "air",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 11,
+        "energy": 0.31,
+        "tension": 0.5,
+        "density": 0.37,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "break_3",
+        "type": "break",
+        "bars": 11,
+        "energy": 0.11,
+        "tension": 0.8,
+        "density": 0.22,
+        "focus": [
+          "pad",
+          "vibraphone"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "verse_4",
+        "type": "verse",
+        "bars": 11,
+        "energy": 0.31,
+        "tension": 0.5,
+        "density": 0.37,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "bridge_5",
+        "type": "bridge",
+        "bars": 9,
+        "energy": 0.36,
+        "tension": 0.7,
+        "density": 0.42,
+        "focus": [
+          "strings",
+          "rhodes"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "verse_6",
+        "type": "verse",
+        "bars": 11,
+        "energy": 0.31,
+        "tension": 0.5,
+        "density": 0.37,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "break_7",
+        "type": "break",
+        "bars": 11,
+        "energy": 0.11,
+        "tension": 0.8,
+        "density": 0.22,
+        "focus": [
+          "pad",
+          "vibraphone"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "verse_8",
+        "type": "verse",
+        "bars": 11,
+        "energy": 0.31,
+        "tension": 0.5,
+        "density": 0.37,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "outro_9",
+        "type": "outro",
+        "bars": 7,
+        "energy": 0.06,
+        "tension": 0.3,
+        "density": 0.12,
+        "focus": [
+          "strings",
+          "rhodes"
+        ],
+        "drums": "air",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "B minor",
+    "language": "hybrid",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Bm9",
+        "Gmaj7"
+      ],
+      "bridge": [
+        "Gmaj7",
+        "Dmaj9"
+      ],
+      "chorus": [
+        "Gmaj9",
+        "Dmaj9",
+        "Em9",
+        "Gb7sus4"
+      ],
+      "intro": [
+        "Bm9"
+      ],
+      "outro": [
+        "Bm9"
+      ],
+      "pre_chorus": [
+        "Em9",
+        "Gb7sus4"
+      ],
+      "verse": [
+        "Bm9",
+        "Gmaj9",
+        "Em9",
+        "Gb7sus4"
+      ]
+    }
+  },
+  "solos": [],
+  "orchestration": {
+    "profile": "atmospheric"
+  },
+  "global": {
+    "bpm": 72
+  },
+  "duration": {
+    "target": "media",
+    "bars_total": 90
+  },
+  "notes": "Automatic — doom_triphop en B minor (hybrid), 90 compases a 72 BPM: intro_1 (intro, 8), verse_2 (verse, 11), break_3 (break, 11), verse_4 (verse, 11), bridge_5 (bridge, 9), verse_6 (verse, 11), break_7 (break, 11), verse_8 (verse, 11), outro_9 (outro, 7), fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "controls.armonia",
+        "regla": "R6",
+        "entrada": "armonia=auto, accessibility=balanced",
+        "detalle": "tabla declarativa por accesibilidad → 'jazz' (§7.2.2)"
+      },
+      {
+        "campo": "controls.pulso",
+        "regla": "R29",
+        "entrada": "pulso=auto",
+        "detalle": "pulso de la casa: 'swing'; el tempo lo fija BPM_DEFAULT de la receta (R11)"
+      },
+      {
+        "campo": "seed",
+        "regla": "R0",
+        "entrada": "no aportada",
+        "detalle": "seed auto-generada 436439 por sha256 de identidad+controles (§9.2, §7.2.5; intérprete puro, reproducible)"
+      },
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=swing",
+        "detalle": "pulso auto → BPM_DEFAULT de la receta doom_triphop = 72 (§3.1)"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='media', bpm=72",
+        "detalle": "90 compases ≈ 5.0 min (banda 'media')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=ciclos, bars_total=90",
+        "detalle": "esqueleto de 9 secciones ['intro', 'verse', 'break', 'verse', 'bridge', 'verse', 'break', 'verse', 'outro'] con reparto [8, 11, 11, 11, 9, 11, 11, 11, 7] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=jazz",
+        "detalle": "tabla declarativa → 'hybrid' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta doom_triphop = 2 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=436439",
+        "detalle": "'B minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='B minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=contenida, energia=baja, palette=None",
+        "detalle": "'atmospheric' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "identity.palette",
+        "regla": "R24",
+        "entrada": "no aportada",
+        "detalle": "paleta mínima ['atmospheric']: el perfil elegido queda incluido (§9.2)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de outro_9, E112)"
+      },
+      {
+        "campo": "title",
+        "regla": "R27",
+        "entrada": "seed=436439",
+        "detalle": "título auto-generado 'Último Tren' (metadata sin consumidor musical, §9.2)"
+      }
+    ],
+    "inputs_hash": "sha256:17eda93189a8151fcda27461c73e0c12d864396fda1813cc9d528d4890a9a1bc",
+    "created_at": "2026-11-12T20:31:13Z"
+  }
+}

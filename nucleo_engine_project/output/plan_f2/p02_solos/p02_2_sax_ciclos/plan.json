@@ -1,0 +1,230 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 42,
+  "title": "Catedral Rota",
+  "identity": {
+    "style": "doom_triphop",
+    "accessibility": "balanced",
+    "protagonist": "sax_tenor",
+    "palette": [
+      "full"
+    ]
+  },
+  "controls": {
+    "energia": "alta",
+    "drums": "protagonista",
+    "forma": "ciclos",
+    "duracion": "corta",
+    "armonia": "crudo",
+    "pulso": "swing"
+  },
+  "album_context": null,
+  "form": {
+    "template": "ciclos",
+    "sections": [
+      {
+        "id": "verse_1",
+        "type": "verse",
+        "bars": 12,
+        "energy": 0.66,
+        "tension": 0.58,
+        "density": 0.52,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 12,
+        "energy": 0.66,
+        "tension": 0.58,
+        "density": 0.52,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "bridge_3",
+        "type": "bridge",
+        "bars": 9,
+        "energy": 0.75,
+        "tension": 0.78,
+        "density": 0.57,
+        "focus": [
+          "strings",
+          "rhodes"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "verse_4",
+        "type": "verse",
+        "bars": 12,
+        "energy": 0.66,
+        "tension": 0.58,
+        "density": 0.52,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "F# minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Gbm9",
+        "Dmaj7"
+      ],
+      "bridge": [
+        "Dmaj7",
+        "Amaj9"
+      ],
+      "chorus": [
+        "Dmaj9",
+        "Amaj9",
+        "Bm9",
+        "Db7sus4"
+      ],
+      "intro": [
+        "Gbm9"
+      ],
+      "outro": [
+        "Gbm9"
+      ],
+      "pre_chorus": [
+        "Bm9",
+        "Db7sus4"
+      ],
+      "verse": [
+        "Gbm9",
+        "Dmaj9",
+        "Bm9",
+        "Db7sus4"
+      ]
+    }
+  },
+  "solos": [],
+  "orchestration": {
+    "profile": "full"
+  },
+  "global": {
+    "bpm": 72
+  },
+  "duration": {
+    "target": "corta",
+    "bars_total": 45
+  },
+  "notes": "Automatic — doom_triphop en F# minor (experimental), 45 compases a 72 BPM: verse_1 (verse, 12), verse_2 (verse, 12), bridge_3 (bridge, 9), verse_4 (verse, 12), fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "controls.pulso",
+        "regla": "R29",
+        "entrada": "pulso=auto",
+        "detalle": "pulso de la casa: 'swing'; el tempo lo fija BPM_DEFAULT de la receta (R11)"
+      },
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=swing",
+        "detalle": "pulso auto → BPM_DEFAULT de la receta doom_triphop = 72 (§3.1)"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='corta', bpm=72",
+        "detalle": "45 compases ≈ 2.5 min (banda 'corta')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=ciclos, bars_total=45",
+        "detalle": "esqueleto de 4 secciones ['verse', 'verse', 'bridge', 'verse'] con reparto [12, 12, 9, 12] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "sections[bridge_3].energy",
+        "regla": "R18",
+        "entrada": "energia=alta",
+        "detalle": "pico ajustado a 0.75 para el gate V112 (≥1 pico con energy ≥0.7, §6.1)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=crudo",
+        "detalle": "tabla declarativa → 'experimental' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta doom_triphop = 2 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=42",
+        "detalle": "'F# minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='F# minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "solos",
+        "regla": "R30",
+        "entrada": "protagonista=sax_tenor (lead), energia=alta",
+        "detalle": "sin solo automático del lead: el scheduler de improv puede silenciarlo (hallazgo P-02, p02_solos/registro.json); el protagonismo queda garantizado por V113"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=protagonista, energia=alta, palette=None",
+        "detalle": "'full' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "identity.palette",
+        "regla": "R24",
+        "entrada": "no aportada",
+        "detalle": "paleta mínima ['full']: el perfil elegido queda incluido (§9.2)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de verse_4, E112)"
+      },
+      {
+        "campo": "title",
+        "regla": "R27",
+        "entrada": "seed=42",
+        "detalle": "título auto-generado 'Catedral Rota' (metadata sin consumidor musical, §9.2)"
+      }
+    ],
+    "inputs_hash": "sha256:1e13c688e63cebd950caf7e5941f8a0a76f39e7b65c8bb40841ba9acc963fb4d",
+    "created_at": "2026-11-13T00:00:00Z"
+  }
+}

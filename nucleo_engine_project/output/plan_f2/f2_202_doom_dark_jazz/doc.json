@@ -1,0 +1,100 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Cartografía Oscura",
+    "notes": "Automatic — doom_dark_jazz en Bb minor (experimental), 31 compases a 50 BPM: intro_1 (intro, 9), verse_2 (verse, 14), outro_3 (outro, 8), fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "doom_dark_jazz",
+    "accessibility": "experimental"
+  },
+  "global": {
+    "bpm": 50,
+    "seed": 202
+  },
+  "harmony": {
+    "key": "Bb minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Bbm9",
+        "Gbmaj7"
+      ],
+      "bridge": [
+        "Gbmaj7",
+        "Dbmaj9"
+      ],
+      "chorus": [
+        "Gbmaj9",
+        "Dbmaj9",
+        "Ebm9",
+        "F7sus4"
+      ],
+      "intro": [
+        "Bbm9"
+      ],
+      "outro": [
+        "Bbm9"
+      ],
+      "pre_chorus": [
+        "Ebm9",
+        "F7sus4"
+      ],
+      "verse": [
+        "Bbm9",
+        "Gbmaj9",
+        "Ebm9",
+        "F7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "intro_1",
+      "type": "intro",
+      "bars": 9,
+      "energy": 0.1,
+      "tension": 0.57,
+      "density": 0.11,
+      "focus": [
+        "rhodes",
+        "strings",
+        "bass"
+      ],
+      "drums": "air"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 14,
+      "energy": 0.3,
+      "tension": 0.67,
+      "density": 0.31,
+      "focus": [
+        "sax_tenor",
+        "rhodes"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "outro_3",
+      "type": "outro",
+      "bars": 8,
+      "energy": 0.05,
+      "tension": 0.47,
+      "density": 0.08,
+      "focus": [
+        "strings",
+        "vibraphone"
+      ],
+      "drums": "air"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

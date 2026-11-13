@@ -1,0 +1,49 @@
+{
+  "g1": {
+    "intencion": {
+      "identity": {
+        "style": "dark_triphop",
+        "accessibility": "balanced",
+        "protagonist": "sax_tenor"
+      },
+      "controls": {
+        "duracion": "corta",
+        "forma": "cancion"
+      }
+    },
+    "seed": 721106,
+    "title": "Sala de Espera",
+    "sha256_midi": "9dda0282c42acb66b57782963e52d102023190f2f22e1df99ca5b83a93d42650",
+    "bpm": 86,
+    "key": "D minor",
+    "template": "cancion",
+    "perfil": "full",
+    "bars_total": 54,
+    "duracion_s": 150.7,
+    "capa_c_ok": true
+  },
+  "g2": {
+    "intencion": {
+      "identity": {
+        "style": "dark_triphop",
+        "accessibility": "balanced",
+        "protagonist": "sax_tenor"
+      },
+      "controls": {
+        "duracion": "corta",
+        "forma": "cancion",
+        "pulso": "recto"
+      }
+    },
+    "seed": 142257,
+    "title": "Lluvia en el Asfalto",
+    "sha256_midi": "b56b01fa855407c820b98179d33ea5a66ed8e33e57dbee0acdd786af017b59a2",
+    "bpm": 86,
+    "key": "A minor",
+    "template": "cancion",
+    "perfil": "full",
+    "bars_total": 54,
+    "duracion_s": 150.7,
+    "capa_c_ok": true
+  }
+}

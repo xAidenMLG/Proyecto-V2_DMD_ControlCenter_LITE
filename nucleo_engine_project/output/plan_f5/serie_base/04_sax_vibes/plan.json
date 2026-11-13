@@ -1,0 +1,282 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 172484,
+  "title": "Ciudad Dormida",
+  "identity": {
+    "style": "dark_triphop",
+    "accessibility": "balanced",
+    "protagonist": "sax_tenor",
+    "palette": [
+      "sax_vibes"
+    ]
+  },
+  "controls": {
+    "energia": "media",
+    "drums": "ausente",
+    "forma": "libre",
+    "duracion": "media",
+    "armonia": "jazz",
+    "pulso": "lento_arrastrado"
+  },
+  "album_context": null,
+  "form": {
+    "template": "libre",
+    "sections": [
+      {
+        "id": "intro_1",
+        "type": "intro",
+        "bars": 7,
+        "energy": 0.24,
+        "tension": 0.2,
+        "density": 0.25,
+        "focus": [
+          "rhodes",
+          "pad"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 11,
+        "energy": 0.44,
+        "tension": 0.35,
+        "density": 0.45,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "pre_chorus_3",
+        "type": "pre_chorus",
+        "bars": 6,
+        "energy": 0.59,
+        "tension": 0.55,
+        "density": 0.55,
+        "focus": [
+          "pad",
+          "vibraphone"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "chorus_4",
+        "type": "chorus",
+        "bars": 13,
+        "energy": 0.79,
+        "tension": 0.5,
+        "density": 0.65,
+        "focus": [
+          "sax_tenor",
+          "drums",
+          "bass"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "break_5",
+        "type": "break",
+        "bars": 11,
+        "energy": 0.34,
+        "tension": 0.6,
+        "density": 0.35,
+        "focus": [
+          "vibraphone"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "bridge_6",
+        "type": "bridge",
+        "bars": 9,
+        "energy": 0.54,
+        "tension": 0.6,
+        "density": 0.55,
+        "focus": [
+          "rhodes",
+          "vibraphone"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "verse_7",
+        "type": "verse",
+        "bars": 11,
+        "energy": 0.44,
+        "tension": 0.35,
+        "density": 0.45,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "chorus_8",
+        "type": "chorus",
+        "bars": 13,
+        "energy": 0.79,
+        "tension": 0.5,
+        "density": 0.65,
+        "focus": [
+          "sax_tenor",
+          "drums",
+          "bass"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "outro_9",
+        "type": "outro",
+        "bars": 7,
+        "energy": 0.19,
+        "tension": 0.15,
+        "density": 0.2,
+        "focus": [
+          "rhodes"
+        ],
+        "drums": "off",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "G# minor",
+    "language": "hybrid",
+    "harmonic_rhythm_bars": 1,
+    "progressions": {
+      "break": [
+        "Abm9",
+        "Emaj7"
+      ],
+      "bridge": [
+        "Emaj7",
+        "Bmaj9"
+      ],
+      "chorus": [
+        "Emaj9",
+        "Bmaj9",
+        "Dbm9",
+        "Eb7sus4"
+      ],
+      "intro": [
+        "Abm9"
+      ],
+      "outro": [
+        "Abm9"
+      ],
+      "pre_chorus": [
+        "Dbm9",
+        "Eb7sus4"
+      ],
+      "verse": [
+        "Abm9",
+        "Emaj9",
+        "Dbm9",
+        "Eb7sus4"
+      ]
+    }
+  },
+  "solos": [],
+  "orchestration": {
+    "profile": "sax_vibes"
+  },
+  "global": {
+    "bpm": 70
+  },
+  "duration": {
+    "target": "media",
+    "bars_total": 88
+  },
+  "notes": "Automatic — dark_triphop en G# minor (hybrid), 88 compases a 70 BPM: intro_1 (intro, 7), verse_2 (verse, 11), pre_chorus_3 (pre_chorus, 6), chorus_4 (chorus, 13), break_5 (break, 11), bridge_6 (bridge, 9), verse_7 (verse, 11), chorus_8 (chorus, 13), outro_9 (outro, 7), fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "seed",
+        "regla": "R0",
+        "entrada": "no aportada",
+        "detalle": "seed auto-generada 172484 por sha256 de identidad+controles (§9.2, §7.2.5; intérprete puro, reproducible)"
+      },
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=lento_arrastrado",
+        "detalle": "tabla declarativa FRACCION_BPM['lento_arrastrado'] sobre BPM_RANGO_TIPICO (70, 96) → 70"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='media', bpm=70",
+        "detalle": "88 compases ≈ 5.0 min (banda 'media')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=libre, bars_total=88",
+        "detalle": "esqueleto de 9 secciones ['intro', 'verse', 'pre_chorus', 'chorus', 'break', 'bridge', 'verse', 'chorus', 'outro'] con reparto [7, 11, 6, 13, 11, 9, 11, 13, 7] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=jazz",
+        "detalle": "tabla declarativa → 'hybrid' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta dark_triphop = 1 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=172484",
+        "detalle": "'G# minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='G# minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=ausente, energia=media, palette=['sax_vibes']",
+        "detalle": "'sax_vibes' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de outro_9, E112)"
+      },
+      {
+        "campo": "title",
+        "regla": "R27",
+        "entrada": "seed=172484",
+        "detalle": "título auto-generado 'Ciudad Dormida' (metadata sin consumidor musical, §9.2)"
+      }
+    ],
+    "inputs_hash": "sha256:97ffc67b868d1452cb88e1235630f397be28942df850a5a68e23c988ef50d33e",
+    "created_at": "2026-11-13T05:28:53Z"
+  }
+}

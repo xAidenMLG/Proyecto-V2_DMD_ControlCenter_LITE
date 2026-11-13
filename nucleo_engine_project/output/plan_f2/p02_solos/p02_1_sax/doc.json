@@ -1,0 +1,124 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Bruma Lenta",
+    "notes": "Automatic — dark_triphop en F minor (pop_dream_pop), 54 compases a 86 BPM: intro_1 (intro, 8), verse_2 (verse, 12), break_3 (break, 12), chorus_4 (chorus, 15), outro_5 (outro, 7), fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "dark_triphop",
+    "accessibility": "balanced"
+  },
+  "global": {
+    "bpm": 86,
+    "seed": 41
+  },
+  "harmony": {
+    "key": "F minor",
+    "language": "pop_dream_pop",
+    "harmonic_rhythm_bars": 1,
+    "progressions": {
+      "break": [
+        "Fm9",
+        "Dbmaj7"
+      ],
+      "bridge": [
+        "Dbmaj7",
+        "Abmaj9"
+      ],
+      "chorus": [
+        "Dbmaj9",
+        "Abmaj9",
+        "Bbm9",
+        "C7sus4"
+      ],
+      "intro": [
+        "Fm9"
+      ],
+      "outro": [
+        "Fm9"
+      ],
+      "pre_chorus": [
+        "Bbm9",
+        "C7sus4"
+      ],
+      "verse": [
+        "Fm9",
+        "Dbmaj9",
+        "Bbm9",
+        "C7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "intro_1",
+      "type": "intro",
+      "bars": 8,
+      "energy": 0.59,
+      "tension": 0.15,
+      "density": 0.3,
+      "focus": [
+        "rhodes",
+        "pad"
+      ],
+      "drums": "air"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 12,
+      "energy": 0.79,
+      "tension": 0.3,
+      "density": 0.5,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "break_3",
+      "type": "break",
+      "bars": 12,
+      "energy": 0.69,
+      "tension": 0.55,
+      "density": 0.4,
+      "focus": [
+        "vibraphone"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "chorus_4",
+      "type": "chorus",
+      "bars": 15,
+      "energy": 0.95,
+      "tension": 0.45,
+      "density": 0.7,
+      "focus": [
+        "sax_tenor",
+        "drums",
+        "bass"
+      ],
+      "drums": "heavy"
+    },
+    {
+      "id": "outro_5",
+      "type": "outro",
+      "bars": 7,
+      "energy": 0.57,
+      "tension": 0.1,
+      "density": 0.25,
+      "focus": [
+        "rhodes"
+      ],
+      "drums": "air"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

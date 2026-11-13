@@ -1,0 +1,53 @@
+{
+  "composicion": "Marea Baja de Neón",
+  "perfil_produccion": "sax_rhodes",
+  "seed": 9202,
+  "sha256_midi": "4b590b654666fba467df32196fbdaab1100b378b952a35cd5fca75d58d029893",
+  "sha256_doc": "b11bb25d4ff2aae556a1971ea851085f2f68c5001eed20418de05889eed9f8e9",
+  "fecha_generacion_utc": "2026-11-13T05:19:55.663557+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 80.0,
+  "compases": 100,
+  "duracion_s": 300.0,
+  "notas_por_pista": {
+    "sax_tenor": 15,
+    "rhodes": 228,
+    "vibraphone": 25,
+    "bass": 272,
+    "drums": 0,
+    "pad": 174
+  },
+  "compliance_fails": [],
+  "compliance_warns": [
+    "motif_repeat"
+  ],
+  "avisos_compilador": [],
+  "resumen_actividad": {
+    "frases_sax": 5,
+    "rhodes_melodico_por_seccion": {
+      "intro_1": 0,
+      "verse_2": 2,
+      "pre_chorus_3": 0,
+      "chorus_4": 0,
+      "break_5": 0,
+      "bridge_6": 0,
+      "verse_7": 0,
+      "chorus_8": 0,
+      "outro_9": 0
+    },
+    "vibes_eco_por_seccion": null
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production sax_rhodes --seed 9202 --out output/plan_f4/ecos_de_neblina/03_marea_baja_de_neon --verify 4b590b654666fba467df32196fbdaab1100b378b952a35cd5fca75d58d029893",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"03_marea_baja_de_neon.mid\" -F salida.wav -r 44100"
+  }
+}

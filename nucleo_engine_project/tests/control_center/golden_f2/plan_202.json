@@ -1,0 +1,205 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 202,
+  "title": "Cartografía Oscura",
+  "identity": {
+    "style": "doom_dark_jazz",
+    "accessibility": "experimental",
+    "protagonist": "rhodes",
+    "palette": [
+      "atmospheric"
+    ]
+  },
+  "controls": {
+    "energia": "baja",
+    "drums": "contenida",
+    "forma": "libre",
+    "duracion": "corta",
+    "armonia": "sombrio",
+    "pulso": "lento_arrastrado"
+  },
+  "album_context": null,
+  "form": {
+    "template": "libre",
+    "sections": [
+      {
+        "id": "intro_1",
+        "type": "intro",
+        "bars": 9,
+        "energy": 0.1,
+        "tension": 0.57,
+        "density": 0.11,
+        "focus": [
+          "rhodes",
+          "strings",
+          "bass"
+        ],
+        "drums": "air",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 14,
+        "energy": 0.3,
+        "tension": 0.67,
+        "density": 0.31,
+        "focus": [
+          "sax_tenor",
+          "rhodes"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "outro_3",
+        "type": "outro",
+        "bars": 8,
+        "energy": 0.05,
+        "tension": 0.47,
+        "density": 0.08,
+        "focus": [
+          "strings",
+          "vibraphone"
+        ],
+        "drums": "air",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "Bb minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Bbm9",
+        "Gbmaj7"
+      ],
+      "bridge": [
+        "Gbmaj7",
+        "Dbmaj9"
+      ],
+      "chorus": [
+        "Gbmaj9",
+        "Dbmaj9",
+        "Ebm9",
+        "F7sus4"
+      ],
+      "intro": [
+        "Bbm9"
+      ],
+      "outro": [
+        "Bbm9"
+      ],
+      "pre_chorus": [
+        "Ebm9",
+        "F7sus4"
+      ],
+      "verse": [
+        "Bbm9",
+        "Gbmaj9",
+        "Ebm9",
+        "F7sus4"
+      ]
+    }
+  },
+  "solos": [],
+  "orchestration": {
+    "profile": "atmospheric"
+  },
+  "global": {
+    "bpm": 50
+  },
+  "duration": {
+    "target": "corta",
+    "bars_total": 31
+  },
+  "notes": "Automatic — doom_dark_jazz en Bb minor (experimental), 31 compases a 50 BPM: intro_1 (intro, 9), verse_2 (verse, 14), outro_3 (outro, 8), fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=lento_arrastrado",
+        "detalle": "tabla declarativa FRACCION_BPM['lento_arrastrado'] sobre BPM_RANGO_TIPICO (50, 74) → 50"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='corta', bpm=50",
+        "detalle": "31 compases ≈ 2.5 min (banda 'corta')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=libre, bars_total=31",
+        "detalle": "esqueleto de 3 secciones ['intro', 'verse', 'outro'] con reparto [9, 14, 8] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=sombrio",
+        "detalle": "tabla declarativa → 'experimental' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta doom_dark_jazz = 2 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=202",
+        "detalle": "'Bb minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='Bb minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=contenida, energia=baja, palette=None",
+        "detalle": "'atmospheric' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "identity.palette",
+        "regla": "R24",
+        "entrada": "no aportada",
+        "detalle": "paleta mínima ['atmospheric']: el perfil elegido queda incluido (§9.2)"
+      },
+      {
+        "campo": "form.sections[].focus",
+        "regla": "R25",
+        "entrada": "protagonista=rhodes",
+        "detalle": "añadido a focus de ['intro_1'] (≥2 secciones, §6.2)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de outro_3, E112)"
+      },
+      {
+        "campo": "title",
+        "regla": "R27",
+        "entrada": "seed=202",
+        "detalle": "título auto-generado 'Cartografía Oscura' (metadata sin consumidor musical, §9.2)"
+      }
+    ],
+    "inputs_hash": "sha256:7952f5f75b60a24bd0080a4cf4cef18acb8382564b71c74ac1d882e2d15b1e7b",
+    "created_at": "2026-11-13T00:00:00Z"
+  }
+}

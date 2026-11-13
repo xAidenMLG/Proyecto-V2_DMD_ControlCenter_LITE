@@ -1,0 +1,10 @@
+{
+  "nombre": "f2_303_doom_triphop",
+  "perfil": "full",
+  "sha256_doc": "1efcfadb7000ebf831b581b44a5295c283cb89c6e4fe9fc10c8d5583bd784dae",
+  "sha256_midi": "8540d2fbc9537c27836b5612d293a75c4b99ae6f848cc5e3628cbe679e60441c",
+  "seed": 303,
+  "bpm": 77,
+  "bars_total": 48,
+  "key": "D# minor"
+}

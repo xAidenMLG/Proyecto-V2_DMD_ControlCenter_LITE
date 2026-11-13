@@ -1,0 +1,73 @@
+{
+  "seed": 202,
+  "perfil": "atmospheric",
+  "template": "libre",
+  "bpm": 50,
+  "bars_total": 31,
+  "ok": true,
+  "checks": [
+    {
+      "id": "C1",
+      "nombre": "pistas y roles = identidad/perfil (§6.3)",
+      "ok": true,
+      "detalle": "pistas ['bass', 'drums', 'piano', 'rhodes', 'sax_tenor', 'strings', 'vibraphone']; roles OK",
+      "bloqueante": true
+    },
+    {
+      "id": "C2",
+      "nombre": "compases y BPM = Plan (§6.3)",
+      "ok": true,
+      "detalle": "bpm evento=50.0 plan=50; bars por sección OK; orden OK; Σbars evento=31",
+      "bloqueante": true
+    },
+    {
+      "id": "C3",
+      "nombre": "duración ±5% del objetivo (§6.3)",
+      "ok": true,
+      "detalle": "real=148.8s objetivo=148.8s delta=0.00%",
+      "bloqueante": true
+    },
+    {
+      "id": "C4",
+      "nombre": "contenido: ninguna pista vacía (§6.3)",
+      "ok": true,
+      "detalle": "vacías=ninguna",
+      "bloqueante": true
+    },
+    {
+      "id": "C4s",
+      "nombre": "solo no vacío (§6.5 fila Solo)",
+      "ok": true,
+      "detalle": "secciones de solo sin notas del instrumento=ninguna",
+      "bloqueante": true
+    },
+    {
+      "id": "C4b",
+      "nombre": "focus[] suena en su sección (§6.3)",
+      "ok": true,
+      "detalle": "focus sin notas=ninguno — DIAGNÓSTICO no bloqueante (hallazgo F1-C4b: improv.py:18 'silencio = decisión'; focus compila a deltas de velocity §2.6.4; el ancla de la casa demo_medianoche incumple este check en outro:rhodes)",
+      "bloqueante": false
+    },
+    {
+      "id": "C5",
+      "nombre": "rango del protagonista = REGISTER_DEFAULT (§6.3)",
+      "ok": true,
+      "detalle": "rhodes: rango real [49, 67] vs REGISTER_DEFAULT [45, 76] — DIAGNÓSTICO no bloqueante (hallazgo F1-C5)",
+      "bloqueante": false
+    },
+    {
+      "id": "C6",
+      "nombre": "sin runs >8 notas idénticas consecutivas (§6.3)",
+      "ok": true,
+      "detalle": "runs=ninguno",
+      "bloqueante": true
+    },
+    {
+      "id": "C7",
+      "nombre": "partitura coherente con bar_beats (§6.3)",
+      "ok": true,
+      "detalle": "t0/t1 acumulados coherentes con bars×bar_beats(4.0); ticks_per_beat=480; total_beats=124.0 vs Σbars×bb=124.0",
+      "bloqueante": true
+    }
+  ]
+}

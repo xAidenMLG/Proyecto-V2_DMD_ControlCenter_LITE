@@ -1,0 +1,290 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 808,
+  "title": "Ceniza Sobre el Mar",
+  "identity": {
+    "style": "doom_dark_jazz",
+    "accessibility": "balanced",
+    "protagonist": "vibraphone",
+    "palette": [
+      "sax_rhodes"
+    ]
+  },
+  "controls": {
+    "energia": "media",
+    "drums": "ausente",
+    "forma": "cancion",
+    "duracion": "media",
+    "armonia": "jazz",
+    "pulso": "latin"
+  },
+  "album_context": null,
+  "form": {
+    "template": "cancion",
+    "sections": [
+      {
+        "id": "intro_1",
+        "type": "intro",
+        "bars": 7,
+        "energy": 0.25,
+        "tension": 0.45,
+        "density": 0.18,
+        "focus": [
+          "strings",
+          "bass"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 11,
+        "energy": 0.45,
+        "tension": 0.55,
+        "density": 0.38,
+        "focus": [
+          "sax_tenor",
+          "rhodes"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "pre_chorus_3",
+        "type": "pre_chorus",
+        "bars": 5,
+        "energy": 0.6,
+        "tension": 0.6,
+        "density": 0.5,
+        "focus": [
+          "vibraphone",
+          "sax_tenor"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "chorus_4",
+        "type": "chorus",
+        "bars": 13,
+        "energy": 0.75,
+        "tension": 0.55,
+        "density": 0.58,
+        "focus": [
+          "sax_tenor",
+          "bass",
+          "drums"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "break_5",
+        "type": "break",
+        "bars": 11,
+        "energy": 0.55,
+        "tension": 0.45,
+        "density": 0.42,
+        "focus": [
+          "sax_tenor",
+          "vibraphone"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "bridge_6",
+        "type": "bridge",
+        "bars": 9,
+        "energy": 0.35,
+        "tension": 0.75,
+        "density": 0.3,
+        "focus": [
+          "strings",
+          "piano"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "verse_7",
+        "type": "verse",
+        "bars": 11,
+        "energy": 0.45,
+        "tension": 0.55,
+        "density": 0.38,
+        "focus": [
+          "sax_tenor",
+          "rhodes"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "chorus_8",
+        "type": "chorus",
+        "bars": 13,
+        "energy": 0.75,
+        "tension": 0.55,
+        "density": 0.58,
+        "focus": [
+          "sax_tenor",
+          "bass",
+          "drums"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "outro_9",
+        "type": "outro",
+        "bars": 6,
+        "energy": 0.37,
+        "tension": 0.35,
+        "density": 0.15,
+        "focus": [
+          "strings",
+          "vibraphone"
+        ],
+        "drums": "off",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "E minor",
+    "language": "hybrid",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Em9",
+        "Cmaj7"
+      ],
+      "bridge": [
+        "Cmaj7",
+        "Gmaj9"
+      ],
+      "chorus": [
+        "Cmaj9",
+        "Gmaj9",
+        "Am9",
+        "B7sus4"
+      ],
+      "intro": [
+        "Em9"
+      ],
+      "outro": [
+        "Em9"
+      ],
+      "pre_chorus": [
+        "Am9",
+        "B7sus4"
+      ],
+      "verse": [
+        "Em9",
+        "Cmaj9",
+        "Am9",
+        "B7sus4"
+      ]
+    }
+  },
+  "solos": [],
+  "orchestration": {
+    "profile": "sax_rhodes"
+  },
+  "global": {
+    "bpm": 69
+  },
+  "duration": {
+    "target": "media",
+    "bars_total": 86
+  },
+  "notes": "Automatic — doom_dark_jazz en E minor (hybrid), 86 compases a 69 BPM: intro_1 (intro, 7), verse_2 (verse, 11), pre_chorus_3 (pre_chorus, 5), chorus_4 (chorus, 13), break_5 (break, 11), bridge_6 (bridge, 9), verse_7 (verse, 11), chorus_8 (chorus, 13), outro_9 (outro, 6), fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=latin",
+        "detalle": "tabla declarativa FRACCION_BPM['latin'] sobre BPM_RANGO_TIPICO (50, 74) → 69"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='media', bpm=69",
+        "detalle": "86 compases ≈ 5.0 min (banda 'media')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=cancion, bars_total=86",
+        "detalle": "esqueleto de 9 secciones ['intro', 'verse', 'pre_chorus', 'chorus', 'break', 'bridge', 'verse', 'chorus', 'outro'] con reparto [7, 11, 5, 13, 11, 9, 11, 13, 6] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "sections[outro_9].energy",
+        "regla": "R20",
+        "entrada": "salto 0.55 chorus_8→outro_9",
+        "detalle": "suavizado a ±0.38 para V115 (≤0.4 entre vecinas, §6.5)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=jazz",
+        "detalle": "tabla declarativa → 'hybrid' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta doom_dark_jazz = 2 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=808",
+        "detalle": "'E minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='E minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=ausente, energia=media, palette=None",
+        "detalle": "'sax_rhodes' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "identity.palette",
+        "regla": "R24",
+        "entrada": "no aportada",
+        "detalle": "paleta mínima ['sax_rhodes']: el perfil elegido queda incluido (§9.2)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de outro_9, E112)"
+      },
+      {
+        "campo": "title",
+        "regla": "R27",
+        "entrada": "seed=808",
+        "detalle": "título auto-generado 'Ceniza Sobre el Mar' (metadata sin consumidor musical, §9.2)"
+      }
+    ],
+    "inputs_hash": "sha256:b07d31c52920709d17a26cc5d6cac4f563a9d13cc7ea3916faeb4d03f77eb872",
+    "created_at": "2026-11-12T19:31:26Z"
+  }
+}

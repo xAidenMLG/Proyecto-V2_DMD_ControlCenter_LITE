@@ -1,0 +1,52 @@
+{
+  "composicion": "Cartografía Oscura",
+  "perfil_produccion": "atmospheric",
+  "seed": 202,
+  "sha256_midi": "e09752bbbb83653516046af1f759cbbc3b080462de9dcfd0aab8afc8246f0e76",
+  "sha256_doc": "7badba85973067026199181d6c98bdcce35357842405c3ba86d6c83f13bc7521",
+  "fecha_generacion_utc": "2026-11-12T19:31:25.914524+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 50.0,
+  "compases": 31,
+  "duracion_s": 148.8,
+  "notas_por_pista": {
+    "sax_tenor": 9,
+    "rhodes": 47,
+    "vibraphone": 6,
+    "bass": 46,
+    "drums": 167,
+    "piano": 41,
+    "strings": 48
+  },
+  "compliance_fails": [],
+  "compliance_warns": [],
+  "avisos_compilador": [
+    "W417: chord_bars/harmonic_rhythm_bars (2) no divide los 9 compases de 'intro_1' (último acorde recortado)"
+  ],
+  "resumen_actividad": {
+    "frases_sax": 2,
+    "rhodes_melodico_por_seccion": {
+      "intro_1": 0,
+      "verse_2": 0,
+      "outro_3": 0
+    },
+    "vibes_eco_por_seccion": {
+      "intro_1": 1,
+      "verse_2": 0,
+      "outro_3": 0
+    }
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production atmospheric --seed 202 --out /home/z/my-project/nucleo_engine_project/output/plan_f2/f2_202_doom_dark_jazz --verify e09752bbbb83653516046af1f759cbbc3b080462de9dcfd0aab8afc8246f0e76",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"f2_202_doom_dark_jazz.mid\" -F salida.wav -r 44100"
+  }
+}

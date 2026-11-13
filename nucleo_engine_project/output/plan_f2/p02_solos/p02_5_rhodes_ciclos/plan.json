@@ -1,0 +1,242 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 45,
+  "title": "Pulso de Medianoche",
+  "identity": {
+    "style": "dark_triphop",
+    "accessibility": "balanced",
+    "protagonist": "rhodes",
+    "palette": [
+      "full"
+    ]
+  },
+  "controls": {
+    "energia": "alta",
+    "drums": "presente",
+    "forma": "ciclos",
+    "duracion": "corta",
+    "armonia": "jazz",
+    "pulso": "swing"
+  },
+  "album_context": null,
+  "form": {
+    "template": "ciclos",
+    "sections": [
+      {
+        "id": "intro_1",
+        "type": "intro",
+        "bars": 8,
+        "energy": 0.44,
+        "tension": 0.2,
+        "density": 0.29,
+        "focus": [
+          "rhodes",
+          "pad"
+        ],
+        "drums": "air",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 12,
+        "energy": 0.64,
+        "tension": 0.35,
+        "density": 0.49,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "verse_3",
+        "type": "verse",
+        "bars": 12,
+        "energy": 0.64,
+        "tension": 0.35,
+        "density": 0.49,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "bridge_4",
+        "type": "bridge",
+        "bars": 10,
+        "energy": 0.74,
+        "tension": 0.6,
+        "density": 0.59,
+        "focus": [
+          "rhodes"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "verse_5",
+        "type": "verse",
+        "bars": 12,
+        "energy": 0.64,
+        "tension": 0.35,
+        "density": 0.49,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "A minor",
+    "language": "hybrid",
+    "harmonic_rhythm_bars": 1,
+    "progressions": {
+      "break": [
+        "Am9",
+        "Fmaj7"
+      ],
+      "bridge": [
+        "Fmaj7",
+        "Cmaj9"
+      ],
+      "chorus": [
+        "Fmaj9",
+        "Cmaj9",
+        "Dm9",
+        "E7sus4"
+      ],
+      "intro": [
+        "Am9"
+      ],
+      "outro": [
+        "Am9"
+      ],
+      "pre_chorus": [
+        "Dm9",
+        "E7sus4"
+      ],
+      "verse": [
+        "Am9",
+        "Fmaj9",
+        "Dm9",
+        "E7sus4"
+      ]
+    }
+  },
+  "solos": [
+    {
+      "section_id": "bridge_4",
+      "instrument": "rhodes"
+    }
+  ],
+  "orchestration": {
+    "profile": "full"
+  },
+  "global": {
+    "bpm": 86
+  },
+  "duration": {
+    "target": "corta",
+    "bars_total": 54
+  },
+  "notes": "Automatic — dark_triphop en A minor (hybrid), 54 compases a 86 BPM: intro_1 (intro, 8), verse_2 (verse, 12), verse_3 (verse, 12), bridge_4 (bridge, 10), verse_5 (verse, 12); solo de rhodes en bridge_4, fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "controls.pulso",
+        "regla": "R29",
+        "entrada": "pulso=auto",
+        "detalle": "pulso de la casa: 'swing'; el tempo lo fija BPM_DEFAULT de la receta (R11)"
+      },
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=swing",
+        "detalle": "pulso auto → BPM_DEFAULT de la receta dark_triphop = 86 (§3.1)"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='corta', bpm=86",
+        "detalle": "54 compases ≈ 2.5 min (banda 'corta')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=ciclos, bars_total=54",
+        "detalle": "esqueleto de 5 secciones ['intro', 'verse', 'verse', 'bridge', 'verse'] con reparto [8, 12, 12, 10, 12] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=jazz",
+        "detalle": "tabla declarativa → 'hybrid' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta dark_triphop = 1 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=45",
+        "detalle": "'A minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='A minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "solos",
+        "regla": "R22",
+        "entrada": "energia=alta, protagonista=rhodes",
+        "detalle": "solo de rhodes en bridge_4 (type=bridge; vía focus[] + comportamiento de motores, §9.2)"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=presente, energia=alta, palette=None",
+        "detalle": "'full' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "identity.palette",
+        "regla": "R24",
+        "entrada": "no aportada",
+        "detalle": "paleta mínima ['full']: el perfil elegido queda incluido (§9.2)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de verse_5, E112)"
+      },
+      {
+        "campo": "title",
+        "regla": "R27",
+        "entrada": "seed=45",
+        "detalle": "título auto-generado 'Pulso de Medianoche' (metadata sin consumidor musical, §9.2)"
+      }
+    ],
+    "inputs_hash": "sha256:0f03ca524096e9ff70e50535e4bff48decc5944dd564e9e31d1a6e4a8985dbfd",
+    "created_at": "2026-11-13T00:00:00Z"
+  }
+}

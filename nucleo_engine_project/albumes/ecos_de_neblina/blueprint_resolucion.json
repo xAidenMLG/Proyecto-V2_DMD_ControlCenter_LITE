@@ -1,0 +1,291 @@
+{
+  "blueprint": {
+    "album": "Ecos de Neblina",
+    "semilla_album": 8899,
+    "tonica": "F minor",
+    "identidad": {
+      "style": "dark_triphop",
+      "accessibility": "balanced",
+      "protagonista": "sax_tenor",
+      "paleta_perfiles": [
+        "atmospheric",
+        "full",
+        "sax_rhodes"
+      ],
+      "armonia": "nocturno",
+      "pulso": "swing"
+    },
+    "motivo_firma": true
+  },
+  "resolucion": [
+    {
+      "indice": 1,
+      "id": "umbral_de_neblina",
+      "seed": 9000,
+      "seed_formula": "semilla_album + 101 * 1",
+      "tonalidad": "F minor",
+      "pool_tonalidades": [
+        "F minor",
+        "Bb minor",
+        "C minor"
+      ],
+      "variacion_protagonista": {
+        "regla": "mismo",
+        "variacion": "mismo"
+      },
+      "protagonista_intencion": "sax_tenor",
+      "perfil_resuelto": "atmospheric",
+      "perfil_regla": "R23 (drums + energía dentro de la paleta)",
+      "bpm": 80,
+      "bars_total": 50,
+      "secciones": [
+        [
+          "intro_1",
+          "intro",
+          8
+        ],
+        [
+          "verse_2",
+          "verse",
+          13
+        ],
+        [
+          "pre_chorus_3",
+          "pre_chorus",
+          6
+        ],
+        [
+          "chorus_4",
+          "chorus",
+          15
+        ],
+        [
+          "outro_5",
+          "outro",
+          8
+        ]
+      ],
+      "solos": [],
+      "energia_objetivo_arco": 0.45,
+      "energia_media_plan": 0.494,
+      "motivo_firma": {
+        "seccion_fuente": "verse_2",
+        "seccion_destino": "chorus_4",
+        "transpose_st": 0,
+        "notas": 5
+      },
+      "inputs_hash": "sha256:6ef07705e9f351ad2e2114171430675da18444a2a09dbb8d4e5647d79fcba098",
+      "sha256_doc": "ca01f668fd4c907e68d8df4397bef73a136fd68bb109b849262a4814781851aa",
+      "doc": "docs/01_umbral_de_neblina.json"
+    },
+    {
+      "indice": 2,
+      "id": "camara_de_espejos",
+      "seed": 9101,
+      "seed_formula": "semilla_album + 101 * 2",
+      "tonalidad": "Bb minor",
+      "pool_tonalidades": [
+        "F minor",
+        "Bb minor",
+        "C minor"
+      ],
+      "variacion_protagonista": {
+        "regla": "registro_distinto",
+        "variacion": "registro_distinto",
+        "protagonista_pista": "vibraphone",
+        "detalle": "protagonista melódico alterno (otro registro)"
+      },
+      "protagonista_intencion": "vibraphone",
+      "perfil_resuelto": "full",
+      "perfil_regla": "R23 (drums + energía dentro de la paleta)",
+      "bpm": 80,
+      "bars_total": 100,
+      "secciones": [
+        [
+          "intro_1",
+          "intro",
+          8
+        ],
+        [
+          "verse_2",
+          "verse",
+          13
+        ],
+        [
+          "pre_chorus_3",
+          "pre_chorus",
+          6
+        ],
+        [
+          "chorus_4",
+          "chorus",
+          15
+        ],
+        [
+          "break_5",
+          "break",
+          13
+        ],
+        [
+          "bridge_6",
+          "bridge",
+          10
+        ],
+        [
+          "verse_7",
+          "verse",
+          13
+        ],
+        [
+          "chorus_8",
+          "chorus",
+          15
+        ],
+        [
+          "outro_9",
+          "outro",
+          7
+        ]
+      ],
+      "solos": [
+        {
+          "section_id": "bridge_6",
+          "instrument": "vibraphone"
+        }
+      ],
+      "energia_objetivo_arco": 0.78,
+      "energia_media_plan": 0.699,
+      "motivo_firma": {
+        "seccion_fuente": "verse_2",
+        "seccion_destino": "chorus_8",
+        "transpose_st": 5,
+        "notas": 5
+      },
+      "inputs_hash": "sha256:a464e44cbfbf1b6cd39f05723f74820638acda221b95e48ea1aec2babc927528",
+      "sha256_doc": "9274d13e4be0bd48c1aee1ea2ca24ccf27f7b1c972d20e2a5dda362b037a401c",
+      "doc": "docs/02_camara_de_espejos.json"
+    },
+    {
+      "indice": 3,
+      "id": "marea_baja_de_neon",
+      "seed": 9202,
+      "seed_formula": "semilla_album + 101 * 3",
+      "tonalidad": "F minor",
+      "pool_tonalidades": [
+        "F minor",
+        "Bb minor",
+        "C minor"
+      ],
+      "variacion_protagonista": {
+        "regla": "solos[] Advanced (§9.2)",
+        "variacion": "rol_acompanante",
+        "solo_materializado": {
+          "section_id": "bridge_6",
+          "instrument": "rhodes"
+        },
+        "detalle": "protagonista acompaña; solo Advanced de otro melódico (§9.2 solos[])"
+      },
+      "protagonista_intencion": "sax_tenor",
+      "perfil_resuelto": "sax_rhodes",
+      "perfil_regla": "R23 (drums + energía dentro de la paleta)",
+      "bpm": 80,
+      "bars_total": 100,
+      "secciones": [
+        [
+          "intro_1",
+          "intro",
+          8
+        ],
+        [
+          "verse_2",
+          "verse",
+          13
+        ],
+        [
+          "pre_chorus_3",
+          "pre_chorus",
+          6
+        ],
+        [
+          "chorus_4",
+          "chorus",
+          15
+        ],
+        [
+          "break_5",
+          "break",
+          13
+        ],
+        [
+          "bridge_6",
+          "break",
+          10
+        ],
+        [
+          "verse_7",
+          "verse",
+          13
+        ],
+        [
+          "chorus_8",
+          "chorus",
+          15
+        ],
+        [
+          "outro_9",
+          "outro",
+          7
+        ]
+      ],
+      "solos": [
+        {
+          "section_id": "bridge_6",
+          "instrument": "rhodes"
+        }
+      ],
+      "energia_objetivo_arco": 0.15,
+      "energia_media_plan": 0.229,
+      "motivo_firma": null,
+      "inputs_hash": "sha256:f54d2a8d90fccb678b2cc6f87d4a35c82828d8ac00a86f23c7a367820c8e738b",
+      "sha256_doc": "b11bb25d4ff2aae556a1971ea851085f2f68c5001eed20418de05889eed9f8e9",
+      "doc": "docs/03_marea_baja_de_neon.json"
+    }
+  ],
+  "reglas": {
+    "reglas": [
+      {
+        "id": "RA1",
+        "nombre": "pista de contraste (energía < 0.35)",
+        "ok": true,
+        "detalle": "arco<0.35: ['marea_baja_de_neon'] | energía real<0.35: ['marea_baja_de_neon']"
+      },
+      {
+        "id": "RA2",
+        "nombre": "≤2 pistas consecutivas con el mismo perfil",
+        "ok": true,
+        "detalle": "racha máxima de perfil igual: 1 — secuencia: atmospheric → full → sax_rhodes"
+      },
+      {
+        "id": "RA3",
+        "nombre": "solos no repiten instrumento en consecutivas",
+        "ok": true,
+        "detalle": "secuencia de solos: — → vibraphone → rhodes"
+      },
+      {
+        "id": "RA4",
+        "nombre": "identidad compartida + tónicas ≤1 alteración",
+        "ok": true,
+        "detalle": "receta dark_triphop en 3/3 pistas; umbral_de_neblina(F minor)↔camara_de_espejos(Bb minor): 1 alteración(es); camara_de_espejos(Bb minor)↔marea_baja_de_neon(F minor): 1 alteración(es)"
+      },
+      {
+        "id": "P03",
+        "nombre": "motivo firma presente ≥1 y ausente ≥1 pista",
+        "ok": true,
+        "detalle": "con motivo: ['umbral_de_neblina', 'camara_de_espejos'] | sin motivo: ['marea_baja_de_neon']"
+      }
+    ],
+    "todas_ok": true,
+    "referencia": "spec DMD Control Center v1.4 §8.4 + §12.1 Fase 4"
+  },
+  "avisos": []
+}

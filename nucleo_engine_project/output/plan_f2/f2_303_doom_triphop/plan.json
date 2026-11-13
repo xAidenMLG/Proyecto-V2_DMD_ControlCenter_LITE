@@ -1,0 +1,249 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 303,
+  "title": "Marea Negra",
+  "identity": {
+    "style": "doom_triphop",
+    "accessibility": "balanced",
+    "protagonist": "vibraphone",
+    "palette": [
+      "full"
+    ]
+  },
+  "controls": {
+    "energia": "alta",
+    "drums": "protagonista",
+    "forma": "ciclos",
+    "duracion": "corta",
+    "armonia": "crudo",
+    "pulso": "recto"
+  },
+  "album_context": null,
+  "form": {
+    "template": "ciclos",
+    "sections": [
+      {
+        "id": "intro_1",
+        "type": "intro",
+        "bars": 7,
+        "energy": 0.46,
+        "tension": 0.43,
+        "density": 0.32,
+        "focus": [
+          "vibraphone",
+          "pad",
+          "strings"
+        ],
+        "drums": "air",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 11,
+        "energy": 0.66,
+        "tension": 0.58,
+        "density": 0.52,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "verse_3",
+        "type": "verse",
+        "bars": 11,
+        "energy": 0.66,
+        "tension": 0.58,
+        "density": 0.52,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "bridge_4",
+        "type": "bridge",
+        "bars": 9,
+        "energy": 0.75,
+        "tension": 0.78,
+        "density": 0.57,
+        "focus": [
+          "vibraphone"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "verse_5",
+        "type": "verse",
+        "bars": 10,
+        "energy": 0.66,
+        "tension": 0.58,
+        "density": 0.52,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "D# minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Ebm9",
+        "Bmaj7"
+      ],
+      "bridge": [
+        "Bmaj7",
+        "Gbmaj9"
+      ],
+      "chorus": [
+        "Bmaj9",
+        "Gbmaj9",
+        "Abm9",
+        "Bb7sus4"
+      ],
+      "intro": [
+        "Ebm9"
+      ],
+      "outro": [
+        "Ebm9"
+      ],
+      "pre_chorus": [
+        "Abm9",
+        "Bb7sus4"
+      ],
+      "verse": [
+        "Ebm9",
+        "Bmaj9",
+        "Abm9",
+        "Bb7sus4"
+      ]
+    }
+  },
+  "solos": [
+    {
+      "section_id": "bridge_4",
+      "instrument": "vibraphone"
+    }
+  ],
+  "orchestration": {
+    "profile": "full"
+  },
+  "global": {
+    "bpm": 77
+  },
+  "duration": {
+    "target": "corta",
+    "bars_total": 48
+  },
+  "notes": "Automatic — doom_triphop en D# minor (experimental), 48 compases a 77 BPM: intro_1 (intro, 7), verse_2 (verse, 11), verse_3 (verse, 11), bridge_4 (bridge, 9), verse_5 (verse, 10); solo de vibraphone en bridge_4, fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=recto",
+        "detalle": "tabla declarativa FRACCION_BPM['recto'] sobre BPM_RANGO_TIPICO (58, 90) → 77"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='corta', bpm=77",
+        "detalle": "48 compases ≈ 2.5 min (banda 'corta')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=ciclos, bars_total=48",
+        "detalle": "esqueleto de 5 secciones ['intro', 'verse', 'verse', 'bridge', 'verse'] con reparto [7, 11, 11, 9, 10] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "sections[bridge_4].energy",
+        "regla": "R18",
+        "entrada": "energia=alta",
+        "detalle": "pico ajustado a 0.75 para el gate V112 (≥1 pico con energy ≥0.7, §6.1)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=crudo",
+        "detalle": "tabla declarativa → 'experimental' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta doom_triphop = 2 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=303",
+        "detalle": "'D# minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='D# minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "solos",
+        "regla": "R22",
+        "entrada": "energia=alta, protagonista=vibraphone",
+        "detalle": "solo de vibraphone en bridge_4 (type=bridge; vía focus[] + comportamiento de motores, §9.2)"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=protagonista, energia=alta, palette=None",
+        "detalle": "'full' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "identity.palette",
+        "regla": "R24",
+        "entrada": "no aportada",
+        "detalle": "paleta mínima ['full']: el perfil elegido queda incluido (§9.2)"
+      },
+      {
+        "campo": "form.sections[].focus",
+        "regla": "R25",
+        "entrada": "protagonista=vibraphone",
+        "detalle": "añadido a focus de ['intro_1'] (≥2 secciones, §6.2)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de verse_5, E112)"
+      },
+      {
+        "campo": "title",
+        "regla": "R27",
+        "entrada": "seed=303",
+        "detalle": "título auto-generado 'Marea Negra' (metadata sin consumidor musical, §9.2)"
+      }
+    ],
+    "inputs_hash": "sha256:3434c2921abc1cae0dafaa83ab8f65b49ca37716cdc931ed6b769975c44e9d46",
+    "created_at": "2026-11-12T19:31:26Z"
+  }
+}

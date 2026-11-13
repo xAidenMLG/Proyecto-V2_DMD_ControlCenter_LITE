@@ -1,0 +1,40 @@
+{
+  "schema": "dmd-album/1",
+  "album": "Ecos de Neblina",
+  "identidad": "dark_triphop",
+  "semilla_album": 8899,
+  "objetivo": {
+    "pistas": 3
+  },
+  "curva_energia": [
+    0.45,
+    0.78,
+    0.15
+  ],
+  "pistas": [
+    {
+      "id": "umbral_de_neblina",
+      "doc": "docs/01_umbral_de_neblina.json",
+      "titulo": "Umbral de Neblina",
+      "perfil": "atmospheric",
+      "seed": 9000,
+      "rol": "apertura — la neblina entra y la casa aparece"
+    },
+    {
+      "id": "camara_de_espejos",
+      "doc": "docs/02_camara_de_espejos.json",
+      "titulo": "Cámara de Espejos",
+      "perfil": "full",
+      "seed": 9101,
+      "rol": "clímax — el vibraphone refleja la casa y toma el momento"
+    },
+    {
+      "id": "marea_baja_de_neon",
+      "doc": "docs/03_marea_baja_de_neon.json",
+      "titulo": "Marea Baja de Neón",
+      "perfil": "sax_rhodes",
+      "seed": 9202,
+      "rol": "cierre — la ciudad respira; el sax acompaña al rhodes"
+    }
+  ]
+}

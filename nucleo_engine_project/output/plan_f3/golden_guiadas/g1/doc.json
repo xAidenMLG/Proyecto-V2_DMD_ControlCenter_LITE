@@ -1,0 +1,125 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Sala de Espera",
+    "notes": "Automatic — dark_triphop en D minor (hybrid), 54 compases a 86 BPM: intro_1 (intro, 9), verse_2 (verse, 14), pre_chorus_3 (pre_chorus, 7), chorus_4 (chorus, 16), outro_5 (outro, 8), fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "dark_triphop",
+    "accessibility": "balanced"
+  },
+  "global": {
+    "bpm": 86,
+    "seed": 721106
+  },
+  "harmony": {
+    "key": "D minor",
+    "language": "hybrid",
+    "harmonic_rhythm_bars": 1,
+    "progressions": {
+      "break": [
+        "Dm9",
+        "Bbmaj7"
+      ],
+      "bridge": [
+        "Bbmaj7",
+        "Fmaj9"
+      ],
+      "chorus": [
+        "Bbmaj9",
+        "Fmaj9",
+        "Gm9",
+        "A7sus4"
+      ],
+      "intro": [
+        "Dm9"
+      ],
+      "outro": [
+        "Dm9"
+      ],
+      "pre_chorus": [
+        "Gm9",
+        "A7sus4"
+      ],
+      "verse": [
+        "Dm9",
+        "Bbmaj9",
+        "Gm9",
+        "A7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "intro_1",
+      "type": "intro",
+      "bars": 9,
+      "energy": 0.24,
+      "tension": 0.2,
+      "density": 0.25,
+      "focus": [
+        "rhodes",
+        "pad"
+      ],
+      "drums": "air"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 14,
+      "energy": 0.44,
+      "tension": 0.35,
+      "density": 0.45,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "pre_chorus_3",
+      "type": "pre_chorus",
+      "bars": 7,
+      "energy": 0.59,
+      "tension": 0.55,
+      "density": 0.55,
+      "focus": [
+        "pad",
+        "vibraphone"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "chorus_4",
+      "type": "chorus",
+      "bars": 16,
+      "energy": 0.79,
+      "tension": 0.5,
+      "density": 0.65,
+      "focus": [
+        "sax_tenor",
+        "drums",
+        "bass"
+      ],
+      "drums": "heavy"
+    },
+    {
+      "id": "outro_5",
+      "type": "outro",
+      "bars": 8,
+      "energy": 0.41,
+      "tension": 0.15,
+      "density": 0.2,
+      "focus": [
+        "rhodes"
+      ],
+      "drums": "air"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

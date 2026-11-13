@@ -1,0 +1,63 @@
+{
+  "composicion": "Cámara de Espejos",
+  "perfil_produccion": "full",
+  "seed": 9101,
+  "sha256_midi": "511227d31a8ac2db2391390935e1a2592799646f7df4e2cb8a1e630915f02c6f",
+  "sha256_doc": "9274d13e4be0bd48c1aee1ea2ca24ccf27f7b1c972d20e2a5dda362b037a401c",
+  "fecha_generacion_utc": "2026-11-13T05:19:55.567817+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 80.0,
+  "compases": 100,
+  "duracion_s": 300.0,
+  "notas_por_pista": {
+    "sax_tenor": 19,
+    "rhodes": 248,
+    "vibraphone": 15,
+    "bass": 262,
+    "drums": 827,
+    "pad": 174
+  },
+  "compliance_fails": [],
+  "compliance_warns": [
+    "motif_repeat"
+  ],
+  "avisos_compilador": [],
+  "resumen_actividad": {
+    "frases_sax": 4,
+    "rhodes_melodico_por_seccion": {
+      "intro_1": 0,
+      "verse_2": 2,
+      "pre_chorus_3": 0,
+      "chorus_4": 2,
+      "break_5": 0,
+      "bridge_6": 0,
+      "verse_7": 0,
+      "chorus_8": 3,
+      "outro_9": 2
+    },
+    "vibes_eco_por_seccion": {
+      "intro_1": 0,
+      "verse_2": 0,
+      "pre_chorus_3": 2,
+      "chorus_4": 0,
+      "break_5": 0,
+      "bridge_6": 0,
+      "verse_7": 0,
+      "chorus_8": 0,
+      "outro_9": 0
+    }
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production full --seed 9101 --out output/plan_f4/ecos_de_neblina/02_camara_de_espejos --verify 511227d31a8ac2db2391390935e1a2592799646f7df4e2cb8a1e630915f02c6f",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"02_camara_de_espejos.mid\" -F salida.wav -r 44100"
+  }
+}

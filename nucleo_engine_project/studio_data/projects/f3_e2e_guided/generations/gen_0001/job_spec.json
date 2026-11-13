@@ -1,0 +1,19 @@
+{
+  "intencion": {
+    "identity": {
+      "style": "doom_triphop",
+      "accessibility": "experimental",
+      "protagonist": "vibraphone"
+    },
+    "controls": {
+      "energia": "muy_alta",
+      "forma": "ciclos",
+      "duracion": "corta",
+      "pulso": "recto"
+    },
+    "title": "Cámara de Eco"
+  },
+  "wav": false,
+  "soundfont": "",
+  "out_dir": "/home/z/my-project/nucleo_engine_project/studio_data/projects/f3_e2e_guided/generations/gen_0001/camara_de_eco"
+}

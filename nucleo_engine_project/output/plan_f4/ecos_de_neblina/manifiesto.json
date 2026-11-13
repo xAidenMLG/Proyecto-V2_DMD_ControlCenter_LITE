@@ -1,0 +1,113 @@
+{
+  "schema": "dmd-album-manifiesto/1",
+  "album": "Ecos de Neblina",
+  "semilla_album": 8899,
+  "creado_utc": "2026-11-13T05:19:55.668411+00:00",
+  "versiones": {
+    "album": "8.0.0",
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "regenerar_album": "python3 -m album producir /home/z/my-project/nucleo_engine_project/albumes/ecos_de_neblina/album.json --out output/plan_f4/ecos_de_neblina --forzar",
+  "pistas": [
+    {
+      "id": "umbral_de_neblina",
+      "indice": 1,
+      "doc": "output/plan_f4/ecos_de_neblina/01_umbral_de_neblina/doc.json",
+      "sha256_doc": "ca01f668fd4c907e68d8df4397bef73a136fd68bb109b849262a4814781851aa",
+      "perfil": "atmospheric",
+      "seed": 9000,
+      "harmony": null,
+      "sha256_midi": "51bb6a6b8f3a11ecdc07ae9a214d49df4617b2d0ded14eebd7e70d0a3c6ce569",
+      "config_efectiva": {
+        "engines": {
+          "sax": true,
+          "rhodes": true,
+          "drums": true,
+          "vibes": true
+        },
+        "variation": "atmospheric",
+        "seed": 9000,
+        "production": "atmospheric",
+        "density": {
+          "sax": 0.75,
+          "rhodes": 0.8,
+          "vibes": 1.0,
+          "drums": 0.75
+        }
+      },
+      "regenerar": "python3 scripts/produce.py output/plan_f4/ecos_de_neblina/01_umbral_de_neblina/doc.json --production atmospheric --seed 9000 --out output/plan_f4/ecos_de_neblina/01_umbral_de_neblina --verify 51bb6a6b8f3a11ecdc07ae9a214d49df4617b2d0ded14eebd7e70d0a3c6ce569",
+      "evidencia": "output/plan_f4/ecos_de_neblina/01_umbral_de_neblina/evidencia.json",
+      "evidencia_sha256_midi": "51bb6a6b8f3a11ecdc07ae9a214d49df4617b2d0ded14eebd7e70d0a3c6ce569"
+    },
+    {
+      "id": "camara_de_espejos",
+      "indice": 2,
+      "doc": "output/plan_f4/ecos_de_neblina/02_camara_de_espejos/doc.json",
+      "sha256_doc": "9274d13e4be0bd48c1aee1ea2ca24ccf27f7b1c972d20e2a5dda362b037a401c",
+      "perfil": "full",
+      "seed": 9101,
+      "harmony": null,
+      "sha256_midi": "511227d31a8ac2db2391390935e1a2592799646f7df4e2cb8a1e630915f02c6f",
+      "config_efectiva": {
+        "engines": {
+          "sax": true,
+          "rhodes": true,
+          "drums": true,
+          "vibes": true
+        },
+        "seed": 9101,
+        "production": "full",
+        "density": {
+          "sax": 1.0,
+          "rhodes": 1.0,
+          "vibes": 1.0,
+          "drums": 1.0
+        }
+      },
+      "regenerar": "python3 scripts/produce.py output/plan_f4/ecos_de_neblina/02_camara_de_espejos/doc.json --production full --seed 9101 --out output/plan_f4/ecos_de_neblina/02_camara_de_espejos --verify 511227d31a8ac2db2391390935e1a2592799646f7df4e2cb8a1e630915f02c6f",
+      "evidencia": "output/plan_f4/ecos_de_neblina/02_camara_de_espejos/evidencia.json",
+      "evidencia_sha256_midi": "511227d31a8ac2db2391390935e1a2592799646f7df4e2cb8a1e630915f02c6f"
+    },
+    {
+      "id": "marea_baja_de_neon",
+      "indice": 3,
+      "doc": "output/plan_f4/ecos_de_neblina/03_marea_baja_de_neon/doc.json",
+      "sha256_doc": "b11bb25d4ff2aae556a1971ea851085f2f68c5001eed20418de05889eed9f8e9",
+      "perfil": "sax_rhodes",
+      "seed": 9202,
+      "harmony": null,
+      "sha256_midi": "4b590b654666fba467df32196fbdaab1100b378b952a35cd5fca75d58d029893",
+      "config_efectiva": {
+        "engines": {
+          "sax": true,
+          "rhodes": true,
+          "drums": false,
+          "vibes": false
+        },
+        "seed": 9202,
+        "production": "sax_rhodes",
+        "density": {
+          "sax": 1.0,
+          "rhodes": 1.0,
+          "vibes": 1.0,
+          "drums": 1.0
+        }
+      },
+      "regenerar": "python3 scripts/produce.py output/plan_f4/ecos_de_neblina/03_marea_baja_de_neon/doc.json --production sax_rhodes --seed 9202 --out output/plan_f4/ecos_de_neblina/03_marea_baja_de_neon --verify 4b590b654666fba467df32196fbdaab1100b378b952a35cd5fca75d58d029893",
+      "evidencia": "output/plan_f4/ecos_de_neblina/03_marea_baja_de_neon/evidencia.json",
+      "evidencia_sha256_midi": "4b590b654666fba467df32196fbdaab1100b378b952a35cd5fca75d58d029893"
+    }
+  ],
+  "hashes": {
+    "plan_json": "6bc8937f0940f85881ba7a0b77451dde40cb11f662b3a7964b1bafc548257a93",
+    "estado_json": "13e4ea5093f1815c99bdb38a51956399a01cd01ef42056ec95cfe2be6d648cc2",
+    "huellas_json": "b5d4345ae4462d86bd106f7b0ba54a96a6e43004379e1cc4eec24b187bfcb52d"
+  }
+}

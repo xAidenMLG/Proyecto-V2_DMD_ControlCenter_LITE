@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "style": "doom_triphop",
+    "accessibility": "balanced",
+    "protagonist": "vibraphone"
+  },
+  "controls": {
+    "energia": "alta",
+    "forma": "ciclos",
+    "duracion": "corta",
+    "armonia": "crudo",
+    "pulso": "recto",
+    "drums": "protagonista"
+  },
+  "seed": 303
+}

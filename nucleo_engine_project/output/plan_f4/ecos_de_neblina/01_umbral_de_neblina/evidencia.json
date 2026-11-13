@@ -1,0 +1,55 @@
+{
+  "composicion": "Umbral de Neblina",
+  "perfil_produccion": "atmospheric",
+  "seed": 9000,
+  "sha256_midi": "51bb6a6b8f3a11ecdc07ae9a214d49df4617b2d0ded14eebd7e70d0a3c6ce569",
+  "sha256_doc": "ca01f668fd4c907e68d8df4397bef73a136fd68bb109b849262a4814781851aa",
+  "fecha_generacion_utc": "2026-11-13T05:19:55.450154+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 80.0,
+  "compases": 50,
+  "duracion_s": 150.0,
+  "notas_por_pista": {
+    "sax_tenor": 19,
+    "rhodes": 104,
+    "vibraphone": 18,
+    "bass": 112,
+    "drums": 113,
+    "pad": 72
+  },
+  "compliance_fails": [],
+  "compliance_warns": [
+    "motif_repeat"
+  ],
+  "avisos_compilador": [],
+  "resumen_actividad": {
+    "frases_sax": 3,
+    "rhodes_melodico_por_seccion": {
+      "intro_1": 0,
+      "verse_2": 3,
+      "pre_chorus_3": 0,
+      "chorus_4": 0,
+      "outro_5": 3
+    },
+    "vibes_eco_por_seccion": {
+      "intro_1": 0,
+      "verse_2": 0,
+      "pre_chorus_3": 1,
+      "chorus_4": 0,
+      "outro_5": 1
+    }
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production atmospheric --seed 9000 --out output/plan_f4/ecos_de_neblina/01_umbral_de_neblina --verify 51bb6a6b8f3a11ecdc07ae9a214d49df4617b2d0ded14eebd7e70d0a3c6ce569",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"01_umbral_de_neblina.mid\" -F salida.wav -r 44100"
+  }
+}

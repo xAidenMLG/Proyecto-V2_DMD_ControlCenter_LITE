@@ -1,0 +1,111 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Cámara Lenta",
+    "notes": "Automatic — doom_dark_jazz en G minor (experimental), 39 compases a 62 BPM: verse_1 (verse, 11), verse_2 (verse, 10), bridge_3 (bridge, 8), verse_4 (verse, 10); solo de rhodes en bridge_3, fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "doom_dark_jazz",
+    "accessibility": "balanced"
+  },
+  "global": {
+    "bpm": 62,
+    "seed": 43
+  },
+  "harmony": {
+    "key": "G minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Gm9",
+        "Ebmaj7"
+      ],
+      "bridge": [
+        "Ebmaj7",
+        "Bbmaj9"
+      ],
+      "chorus": [
+        "Ebmaj9",
+        "Bbmaj9",
+        "Cm9",
+        "D7sus4"
+      ],
+      "intro": [
+        "Gm9"
+      ],
+      "outro": [
+        "Gm9"
+      ],
+      "pre_chorus": [
+        "Cm9",
+        "D7sus4"
+      ],
+      "verse": [
+        "Gm9",
+        "Ebmaj9",
+        "Cm9",
+        "D7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "verse_1",
+      "type": "verse",
+      "bars": 11,
+      "energy": 0.65,
+      "tension": 0.67,
+      "density": 0.38,
+      "focus": [
+        "sax_tenor",
+        "rhodes"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 10,
+      "energy": 0.65,
+      "tension": 0.67,
+      "density": 0.38,
+      "focus": [
+        "sax_tenor",
+        "rhodes"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "bridge_3",
+      "type": "bridge",
+      "bars": 8,
+      "energy": 0.75,
+      "tension": 0.87,
+      "density": 0.3,
+      "focus": [
+        "rhodes"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "verse_4",
+      "type": "verse",
+      "bars": 10,
+      "energy": 0.75,
+      "tension": 0.67,
+      "density": 0.38,
+      "focus": [
+        "sax_tenor",
+        "rhodes"
+      ],
+      "drums": "light"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

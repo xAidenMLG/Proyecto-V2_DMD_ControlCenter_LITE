@@ -1,0 +1,16 @@
+{
+  "identity": {
+    "style": "doom_dark_jazz",
+    "accessibility": "experimental",
+    "protagonist": "rhodes"
+  },
+  "controls": {
+    "energia": "baja",
+    "forma": "libre",
+    "duracion": "corta",
+    "armonia": "sombrio",
+    "pulso": "lento_arrastrado",
+    "drums": "contenida"
+  },
+  "seed": 202
+}

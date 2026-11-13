@@ -1,0 +1,74 @@
+[
+  {
+    "tema": "p02_1_sax",
+    "estilo": "dark_triphop",
+    "protagonista": "sax_tenor",
+    "seed": 41,
+    "solo": "None@None",
+    "capa_c_ok": true,
+    "solo_no_vacio": true,
+    "rango_protagonista": "sax_tenor: rango real [63, 79] vs REGISTER_DEFAULT [62, 81] — DIAGNÓSTICO no blo",
+    "sha256_midi": "0fef1ab13c085263ad78149bcca9ee9d37a0548acb5fc4a6ffe4c85e6b35f873",
+    "fallos": []
+  },
+  {
+    "tema": "p02_2_sax_ciclos",
+    "estilo": "doom_triphop",
+    "protagonista": "sax_tenor",
+    "seed": 42,
+    "solo": "None@None",
+    "capa_c_ok": true,
+    "solo_no_vacio": true,
+    "rango_protagonista": "sax_tenor: rango real [61, 67] vs REGISTER_DEFAULT [62, 81] — DIAGNÓSTICO no blo",
+    "sha256_midi": "bfc3e6c1a1167c31a3614093f8a18ca68138f3a317f40f00a565fe99cf608832",
+    "fallos": []
+  },
+  {
+    "tema": "p02_3_rhodes_ciclos",
+    "estilo": "doom_dark_jazz",
+    "protagonista": "rhodes",
+    "seed": 43,
+    "solo": "rhodes@bridge_3",
+    "capa_c_ok": true,
+    "solo_no_vacio": true,
+    "rango_protagonista": "rhodes: rango real [45, 77] vs REGISTER_DEFAULT [45, 76] — DIAGNÓSTICO no bloque",
+    "sha256_midi": "bad3f1390793a6e6bdeb18d8ce8b7a2f148e1ced0e6226970d5fc691d2ec5bbb",
+    "fallos": []
+  },
+  {
+    "tema": "p02_4_vibes",
+    "estilo": "doom_triphop",
+    "protagonista": "vibraphone",
+    "seed": 44,
+    "solo": "vibraphone@bridge_3",
+    "capa_c_ok": true,
+    "solo_no_vacio": true,
+    "rango_protagonista": "vibraphone: rango real [75, 87] vs REGISTER_DEFAULT [60, 88] — DIAGNÓSTICO no bl",
+    "sha256_midi": "4c4ba89777a85f19de90234625446e23e3928e366dc52349516f9838c99e8320",
+    "fallos": []
+  },
+  {
+    "tema": "p02_5_rhodes_ciclos",
+    "estilo": "dark_triphop",
+    "protagonista": "rhodes",
+    "seed": 45,
+    "solo": "rhodes@bridge_4",
+    "capa_c_ok": true,
+    "solo_no_vacio": true,
+    "rango_protagonista": "rhodes: rango real [55, 77] vs REGISTER_DEFAULT [45, 76] — DIAGNÓSTICO no bloque",
+    "sha256_midi": "fad23f4622c0afe72a2b0d1da70073a362c01296e60d8dd5633ed4549fc30e10",
+    "fallos": []
+  },
+  {
+    "tema": "p02_6_vibes_libre",
+    "estilo": "doom_dark_jazz",
+    "protagonista": "vibraphone",
+    "seed": 46,
+    "solo": "vibraphone@bridge_3",
+    "capa_c_ok": true,
+    "solo_no_vacio": true,
+    "rango_protagonista": "vibraphone: rango real [72, 84] vs REGISTER_DEFAULT [60, 88] — DIAGNÓSTICO no bl",
+    "sha256_midi": "b27861e9eed2b1b37cae641e52d91e2f64254792de77449a9bf4dd58bb4042f0",
+    "fallos": []
+  }
+]

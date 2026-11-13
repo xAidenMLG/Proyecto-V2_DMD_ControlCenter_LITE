@@ -1,0 +1,232 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 101,
+  "title": "Bruma Lenta",
+  "identity": {
+    "style": "dark_triphop",
+    "accessibility": "balanced",
+    "protagonist": "sax_tenor",
+    "palette": [
+      "full"
+    ]
+  },
+  "controls": {
+    "energia": "media",
+    "drums": "presente",
+    "forma": "cancion",
+    "duracion": "corta",
+    "armonia": "nocturno",
+    "pulso": "swing"
+  },
+  "album_context": null,
+  "form": {
+    "template": "cancion",
+    "sections": [
+      {
+        "id": "intro_1",
+        "type": "intro",
+        "bars": 8,
+        "energy": 0.24,
+        "tension": 0.15,
+        "density": 0.22,
+        "focus": [
+          "rhodes",
+          "pad"
+        ],
+        "drums": "air",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 13,
+        "energy": 0.44,
+        "tension": 0.3,
+        "density": 0.42,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "pre_chorus_3",
+        "type": "pre_chorus",
+        "bars": 6,
+        "energy": 0.59,
+        "tension": 0.5,
+        "density": 0.52,
+        "focus": [
+          "pad",
+          "vibraphone"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "chorus_4",
+        "type": "chorus",
+        "bars": 15,
+        "energy": 0.79,
+        "tension": 0.45,
+        "density": 0.62,
+        "focus": [
+          "sax_tenor",
+          "drums",
+          "bass"
+        ],
+        "drums": "heavy",
+        "locked": false
+      },
+      {
+        "id": "outro_5",
+        "type": "outro",
+        "bars": 8,
+        "energy": 0.41,
+        "tension": 0.1,
+        "density": 0.17,
+        "focus": [
+          "rhodes"
+        ],
+        "drums": "air",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "F minor",
+    "language": "pop_dream_pop",
+    "harmonic_rhythm_bars": 1,
+    "progressions": {
+      "break": [
+        "Fm9",
+        "Dbmaj7"
+      ],
+      "bridge": [
+        "Dbmaj7",
+        "Abmaj9"
+      ],
+      "chorus": [
+        "Dbmaj9",
+        "Abmaj9",
+        "Bbm9",
+        "C7sus4"
+      ],
+      "intro": [
+        "Fm9"
+      ],
+      "outro": [
+        "Fm9"
+      ],
+      "pre_chorus": [
+        "Bbm9",
+        "C7sus4"
+      ],
+      "verse": [
+        "Fm9",
+        "Dbmaj9",
+        "Bbm9",
+        "C7sus4"
+      ]
+    }
+  },
+  "solos": [],
+  "orchestration": {
+    "profile": "full"
+  },
+  "global": {
+    "bpm": 80
+  },
+  "duration": {
+    "target": "corta",
+    "bars_total": 50
+  },
+  "notes": "Automatic — dark_triphop en F minor (pop_dream_pop), 50 compases a 80 BPM: intro_1 (intro, 8), verse_2 (verse, 13), pre_chorus_3 (pre_chorus, 6), chorus_4 (chorus, 15), outro_5 (outro, 8), fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=swing",
+        "detalle": "tabla declarativa FRACCION_BPM['swing'] sobre BPM_RANGO_TIPICO (70, 96) → 80"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='corta', bpm=80",
+        "detalle": "50 compases ≈ 2.5 min (banda 'corta')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=cancion, bars_total=50",
+        "detalle": "esqueleto de 5 secciones ['intro', 'verse', 'pre_chorus', 'chorus', 'outro'] con reparto [8, 13, 6, 15, 8] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "sections[outro_5].energy",
+        "regla": "R20",
+        "entrada": "salto 0.60 chorus_4→outro_5",
+        "detalle": "suavizado a ±0.38 para V115 (≤0.4 entre vecinas, §6.5)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=nocturno",
+        "detalle": "tabla declarativa → 'pop_dream_pop' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta dark_triphop = 1 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=101",
+        "detalle": "'F minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='F minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=presente, energia=media, palette=None",
+        "detalle": "'full' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "identity.palette",
+        "regla": "R24",
+        "entrada": "no aportada",
+        "detalle": "paleta mínima ['full']: el perfil elegido queda incluido (§9.2)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de outro_5, E112)"
+      },
+      {
+        "campo": "title",
+        "regla": "R27",
+        "entrada": "seed=101",
+        "detalle": "título auto-generado 'Bruma Lenta' (metadata sin consumidor musical, §9.2)"
+      }
+    ],
+    "inputs_hash": "sha256:0954bf27561d2107708d398675e8c947f3cf7fb07c5e6b3bb1364c2d41541099",
+    "created_at": "2026-11-13T00:00:00Z"
+  }
+}

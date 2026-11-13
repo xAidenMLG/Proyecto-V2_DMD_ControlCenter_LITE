@@ -1,0 +1,59 @@
+{
+  "composicion": "Marea Negra",
+  "perfil_produccion": "full",
+  "seed": 303,
+  "sha256_midi": "8540d2fbc9537c27836b5612d293a75c4b99ae6f848cc5e3628cbe679e60441c",
+  "sha256_doc": "1efcfadb7000ebf831b581b44a5295c283cb89c6e4fe9fc10c8d5583bd784dae",
+  "fecha_generacion_utc": "2026-11-12T19:31:26.178575+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 77.0,
+  "compases": 48,
+  "duracion_s": 149.6,
+  "notas_por_pista": {
+    "sax_tenor": 10,
+    "rhodes": 104,
+    "vibraphone": 7,
+    "bass": 124,
+    "drums": 406,
+    "pad": 63,
+    "strings": 114
+  },
+  "compliance_fails": [],
+  "compliance_warns": [],
+  "avisos_compilador": [
+    "W417: chord_bars/harmonic_rhythm_bars (2) no divide los 7 compases de 'intro_1' (último acorde recortado)",
+    "W417: chord_bars/harmonic_rhythm_bars (2) no divide los 11 compases de 'verse_2' (último acorde recortado)",
+    "W417: chord_bars/harmonic_rhythm_bars (2) no divide los 11 compases de 'verse_3' (último acorde recortado)",
+    "W417: chord_bars/harmonic_rhythm_bars (2) no divide los 9 compases de 'bridge_4' (último acorde recortado)"
+  ],
+  "resumen_actividad": {
+    "frases_sax": 3,
+    "rhodes_melodico_por_seccion": {
+      "intro_1": 0,
+      "verse_2": 0,
+      "verse_3": 0,
+      "bridge_4": 0,
+      "verse_5": 0
+    },
+    "vibes_eco_por_seccion": {
+      "intro_1": 0,
+      "verse_2": 0,
+      "verse_3": 0,
+      "bridge_4": 0,
+      "verse_5": 0
+    }
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production full --seed 303 --out /home/z/my-project/nucleo_engine_project/output/plan_f2/f2_303_doom_triphop --verify 8540d2fbc9537c27836b5612d293a75c4b99ae6f848cc5e3628cbe679e60441c",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"f2_303_doom_triphop.mid\" -F salida.wav -r 44100"
+  }
+}

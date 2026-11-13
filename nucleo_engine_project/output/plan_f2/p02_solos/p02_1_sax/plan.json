@@ -1,0 +1,243 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 41,
+  "title": "Bruma Lenta",
+  "identity": {
+    "style": "dark_triphop",
+    "accessibility": "balanced",
+    "protagonist": "sax_tenor",
+    "palette": [
+      "full"
+    ]
+  },
+  "controls": {
+    "energia": "muy_alta",
+    "drums": "presente",
+    "forma": "cancion",
+    "duracion": "corta",
+    "armonia": "nocturno",
+    "pulso": "swing"
+  },
+  "album_context": null,
+  "form": {
+    "template": "cancion",
+    "sections": [
+      {
+        "id": "intro_1",
+        "type": "intro",
+        "bars": 8,
+        "energy": 0.59,
+        "tension": 0.15,
+        "density": 0.3,
+        "focus": [
+          "rhodes",
+          "pad"
+        ],
+        "drums": "air",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 12,
+        "energy": 0.79,
+        "tension": 0.3,
+        "density": 0.5,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "break_3",
+        "type": "break",
+        "bars": 12,
+        "energy": 0.69,
+        "tension": 0.55,
+        "density": 0.4,
+        "focus": [
+          "vibraphone"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "chorus_4",
+        "type": "chorus",
+        "bars": 15,
+        "energy": 0.95,
+        "tension": 0.45,
+        "density": 0.7,
+        "focus": [
+          "sax_tenor",
+          "drums",
+          "bass"
+        ],
+        "drums": "heavy",
+        "locked": false
+      },
+      {
+        "id": "outro_5",
+        "type": "outro",
+        "bars": 7,
+        "energy": 0.57,
+        "tension": 0.1,
+        "density": 0.25,
+        "focus": [
+          "rhodes"
+        ],
+        "drums": "air",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "F minor",
+    "language": "pop_dream_pop",
+    "harmonic_rhythm_bars": 1,
+    "progressions": {
+      "break": [
+        "Fm9",
+        "Dbmaj7"
+      ],
+      "bridge": [
+        "Dbmaj7",
+        "Abmaj9"
+      ],
+      "chorus": [
+        "Dbmaj9",
+        "Abmaj9",
+        "Bbm9",
+        "C7sus4"
+      ],
+      "intro": [
+        "Fm9"
+      ],
+      "outro": [
+        "Fm9"
+      ],
+      "pre_chorus": [
+        "Bbm9",
+        "C7sus4"
+      ],
+      "verse": [
+        "Fm9",
+        "Dbmaj9",
+        "Bbm9",
+        "C7sus4"
+      ]
+    }
+  },
+  "solos": [],
+  "orchestration": {
+    "profile": "full"
+  },
+  "global": {
+    "bpm": 86
+  },
+  "duration": {
+    "target": "corta",
+    "bars_total": 54
+  },
+  "notes": "Automatic — dark_triphop en F minor (pop_dream_pop), 54 compases a 86 BPM: intro_1 (intro, 8), verse_2 (verse, 12), break_3 (break, 12), chorus_4 (chorus, 15), outro_5 (outro, 7), fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "controls.pulso",
+        "regla": "R29",
+        "entrada": "pulso=auto",
+        "detalle": "pulso de la casa: 'swing'; el tempo lo fija BPM_DEFAULT de la receta (R11)"
+      },
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=swing",
+        "detalle": "pulso auto → BPM_DEFAULT de la receta dark_triphop = 86 (§3.1)"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='corta', bpm=86",
+        "detalle": "54 compases ≈ 2.5 min (banda 'corta')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=cancion, bars_total=54",
+        "detalle": "esqueleto de 5 secciones ['intro', 'verse', 'break', 'chorus', 'outro'] con reparto [8, 12, 12, 15, 7] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "sections[outro_5].energy",
+        "regla": "R20",
+        "entrada": "salto 0.41 chorus_4→outro_5",
+        "detalle": "suavizado a ±0.38 para V115 (≤0.4 entre vecinas, §6.5)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=nocturno",
+        "detalle": "tabla declarativa → 'pop_dream_pop' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta dark_triphop = 1 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=41",
+        "detalle": "'F minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='F minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "solos",
+        "regla": "R30",
+        "entrada": "protagonista=sax_tenor (lead), energia=muy_alta",
+        "detalle": "sin solo automático del lead: el scheduler de improv puede silenciarlo (hallazgo P-02, p02_solos/registro.json); el protagonismo queda garantizado por V113"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=presente, energia=muy_alta, palette=None",
+        "detalle": "'full' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "identity.palette",
+        "regla": "R24",
+        "entrada": "no aportada",
+        "detalle": "paleta mínima ['full']: el perfil elegido queda incluido (§9.2)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de outro_5, E112)"
+      },
+      {
+        "campo": "title",
+        "regla": "R27",
+        "entrada": "seed=41",
+        "detalle": "título auto-generado 'Bruma Lenta' (metadata sin consumidor musical, §9.2)"
+      }
+    ],
+    "inputs_hash": "sha256:13ff09534c2c6317262dc7957066ba332857464ca5c62e6a84aeabcc84485405",
+    "created_at": "2026-11-13T00:00:00Z"
+  }
+}

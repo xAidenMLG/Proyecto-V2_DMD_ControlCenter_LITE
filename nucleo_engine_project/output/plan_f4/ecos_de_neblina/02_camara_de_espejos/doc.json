@@ -1,0 +1,228 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Cámara de Espejos",
+    "notes": "Automatic — dark_triphop en Bb minor (pop_dream_pop), 100 compases a 80 BPM: intro_1 (intro, 8), verse_2 (verse, 13), pre_chorus_3 (pre_chorus, 6), chorus_4 (chorus, 15), break_5 (break, 13), bridge_6 (bridge, 10), verse_7 (verse, 13), chorus_8 (chorus, 15), outro_9 (outro, 7); solo de vibraphone en bridge_6, fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "dark_triphop",
+    "accessibility": "balanced"
+  },
+  "global": {
+    "bpm": 80,
+    "seed": 9101
+  },
+  "harmony": {
+    "key": "Bb minor",
+    "language": "pop_dream_pop",
+    "harmonic_rhythm_bars": 1,
+    "progressions": {
+      "break": [
+        "Bbm9",
+        "Gbmaj7"
+      ],
+      "bridge": [
+        "Gbmaj7",
+        "Dbmaj9"
+      ],
+      "chorus": [
+        "Gbmaj9",
+        "Dbmaj9",
+        "Ebm9",
+        "F7sus4"
+      ],
+      "intro": [
+        "Bbm9"
+      ],
+      "outro": [
+        "Bbm9"
+      ],
+      "pre_chorus": [
+        "Ebm9",
+        "F7sus4"
+      ],
+      "verse": [
+        "Bbm9",
+        "Gbmaj9",
+        "Ebm9",
+        "F7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "intro_1",
+      "type": "intro",
+      "bars": 8,
+      "energy": 0.44,
+      "tension": 0.15,
+      "density": 0.26,
+      "focus": [
+        "rhodes",
+        "pad"
+      ],
+      "drums": "air"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 13,
+      "energy": 0.64,
+      "tension": 0.3,
+      "density": 0.46,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "pre_chorus_3",
+      "type": "pre_chorus",
+      "bars": 6,
+      "energy": 0.79,
+      "tension": 0.5,
+      "density": 0.56,
+      "focus": [
+        "pad",
+        "vibraphone"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "chorus_4",
+      "type": "chorus",
+      "bars": 15,
+      "energy": 0.95,
+      "tension": 0.45,
+      "density": 0.66,
+      "focus": [
+        "sax_tenor",
+        "drums",
+        "bass"
+      ],
+      "drums": "heavy"
+    },
+    {
+      "id": "break_5",
+      "type": "break",
+      "bars": 13,
+      "energy": 0.57,
+      "tension": 0.55,
+      "density": 0.36,
+      "focus": [
+        "vibraphone"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "bridge_6",
+      "type": "bridge",
+      "bars": 10,
+      "energy": 0.74,
+      "tension": 0.55,
+      "density": 0.56,
+      "focus": [
+        "vibraphone"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "verse_7",
+      "type": "verse",
+      "bars": 13,
+      "energy": 0.64,
+      "tension": 0.3,
+      "density": 0.46,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "chorus_8",
+      "type": "chorus",
+      "bars": 15,
+      "energy": 0.95,
+      "tension": 0.45,
+      "density": 0.66,
+      "focus": [
+        "sax_tenor",
+        "drums",
+        "bass"
+      ],
+      "drums": "heavy"
+    },
+    {
+      "id": "outro_9",
+      "type": "outro",
+      "bars": 7,
+      "energy": 0.57,
+      "tension": 0.1,
+      "density": 0.21,
+      "focus": [
+        "rhodes"
+      ],
+      "drums": "air"
+    }
+  ],
+  "development": {
+    "melody": {
+      "phrases": {
+        "verse_2": [
+          {
+            "bar": 0,
+            "beat": 0.0,
+            "pitch": 70,
+            "dur": 1.5,
+            "vel": 70
+          },
+          {
+            "bar": 1,
+            "beat": 0.0,
+            "pitch": 73,
+            "dur": 1.0,
+            "vel": 72
+          },
+          {
+            "bar": 2,
+            "beat": 0.0,
+            "pitch": 77,
+            "dur": 2.0,
+            "vel": 74
+          },
+          {
+            "bar": 3,
+            "beat": 0.0,
+            "pitch": 75,
+            "dur": 1.5,
+            "vel": 70
+          },
+          {
+            "bar": 3,
+            "beat": 2.0,
+            "pitch": 72,
+            "dur": 1.0,
+            "vel": 68
+          }
+        ]
+      }
+    },
+    "motifs": {
+      "firma_neblina": {
+        "from_section": "verse_2",
+        "sections": [
+          "chorus_8"
+        ],
+        "transpose_st": 0
+      }
+    }
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

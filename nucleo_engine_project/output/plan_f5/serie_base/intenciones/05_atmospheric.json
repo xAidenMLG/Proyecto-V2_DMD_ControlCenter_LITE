@@ -1,0 +1,18 @@
+{
+  "identity": {
+    "style": "dark_triphop",
+    "accessibility": "balanced",
+    "protagonist": "sax_tenor",
+    "palette": [
+      "atmospheric"
+    ]
+  },
+  "controls": {
+    "energia": "baja",
+    "forma": "cancion",
+    "duracion": "larga",
+    "armonia": "nocturno",
+    "pulso": "recto",
+    "drums": "contenida"
+  }
+}

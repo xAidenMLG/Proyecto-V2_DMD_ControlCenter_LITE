@@ -1,0 +1,125 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Velo de Humo",
+    "notes": "Automatic — dark_triphop en Bb minor (experimental), 54 compases a 86 BPM: intro_1 (intro, 8), verse_2 (verse, 12), verse_3 (verse, 12), bridge_4 (bridge, 10), verse_5 (verse, 12), fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "dark_triphop",
+    "accessibility": "balanced"
+  },
+  "global": {
+    "bpm": 86,
+    "seed": 225802
+  },
+  "harmony": {
+    "key": "Bb minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 1,
+    "progressions": {
+      "break": [
+        "Bbm9",
+        "Gbmaj7"
+      ],
+      "bridge": [
+        "Gbmaj7",
+        "Dbmaj9"
+      ],
+      "chorus": [
+        "Gbmaj9",
+        "Dbmaj9",
+        "Ebm9",
+        "F7sus4"
+      ],
+      "intro": [
+        "Bbm9"
+      ],
+      "outro": [
+        "Bbm9"
+      ],
+      "pre_chorus": [
+        "Ebm9",
+        "F7sus4"
+      ],
+      "verse": [
+        "Bbm9",
+        "Gbmaj9",
+        "Ebm9",
+        "F7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "intro_1",
+      "type": "intro",
+      "bars": 8,
+      "energy": 0.09,
+      "tension": 0.32,
+      "density": 0.18,
+      "focus": [
+        "rhodes",
+        "pad"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 12,
+      "energy": 0.29,
+      "tension": 0.47,
+      "density": 0.38,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "verse_3",
+      "type": "verse",
+      "bars": 12,
+      "energy": 0.29,
+      "tension": 0.47,
+      "density": 0.38,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "bridge_4",
+      "type": "bridge",
+      "bars": 10,
+      "energy": 0.39,
+      "tension": 0.72,
+      "density": 0.48,
+      "focus": [
+        "rhodes",
+        "vibraphone"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "verse_5",
+      "type": "verse",
+      "bars": 12,
+      "energy": 0.29,
+      "tension": 0.47,
+      "density": 0.38,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "off"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 43,
+  "title": "Cámara Lenta",
+  "identity": {
+    "style": "doom_dark_jazz",
+    "accessibility": "balanced",
+    "protagonist": "rhodes",
+    "palette": [
+      "atmospheric"
+    ]
+  },
+  "controls": {
+    "energia": "alta",
+    "drums": "contenida",
+    "forma": "ciclos",
+    "duracion": "corta",
+    "armonia": "sombrio",
+    "pulso": "swing"
+  },
+  "album_context": null,
+  "form": {
+    "template": "ciclos",
+    "sections": [
+      {
+        "id": "verse_1",
+        "type": "verse",
+        "bars": 11,
+        "energy": 0.65,
+        "tension": 0.67,
+        "density": 0.38,
+        "focus": [
+          "sax_tenor",
+          "rhodes"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 10,
+        "energy": 0.65,
+        "tension": 0.67,
+        "density": 0.38,
+        "focus": [
+          "sax_tenor",
+          "rhodes"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "bridge_3",
+        "type": "bridge",
+        "bars": 8,
+        "energy": 0.75,
+        "tension": 0.87,
+        "density": 0.3,
+        "focus": [
+          "rhodes"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "verse_4",
+        "type": "verse",
+        "bars": 10,
+        "energy": 0.75,
+        "tension": 0.67,
+        "density": 0.38,
+        "focus": [
+          "sax_tenor",
+          "rhodes"
+        ],
+        "drums": "light",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "G minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Gm9",
+        "Ebmaj7"
+      ],
+      "bridge": [
+        "Ebmaj7",
+        "Bbmaj9"
+      ],
+      "chorus": [
+        "Ebmaj9",
+        "Bbmaj9",
+        "Cm9",
+        "D7sus4"
+      ],
+      "intro": [
+        "Gm9"
+      ],
+      "outro": [
+        "Gm9"
+      ],
+      "pre_chorus": [
+        "Cm9",
+        "D7sus4"
+      ],
+      "verse": [
+        "Gm9",
+        "Ebmaj9",
+        "Cm9",
+        "D7sus4"
+      ]
+    }
+  },
+  "solos": [
+    {
+      "section_id": "bridge_3",
+      "instrument": "rhodes"
+    }
+  ],
+  "orchestration": {
+    "profile": "atmospheric"
+  },
+  "global": {
+    "bpm": 62
+  },
+  "duration": {
+    "target": "corta",
+    "bars_total": 39
+  },
+  "notes": "Automatic — doom_dark_jazz en G minor (experimental), 39 compases a 62 BPM: verse_1 (verse, 11), verse_2 (verse, 10), bridge_3 (bridge, 8), verse_4 (verse, 10); solo de rhodes en bridge_3, fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "controls.pulso",
+        "regla": "R29",
+        "entrada": "pulso=auto",
+        "detalle": "pulso de la casa: 'swing'; el tempo lo fija BPM_DEFAULT de la receta (R11)"
+      },
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=swing",
+        "detalle": "pulso auto → BPM_DEFAULT de la receta doom_dark_jazz = 62 (§3.1)"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='corta', bpm=62",
+        "detalle": "39 compases ≈ 2.5 min (banda 'corta')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=ciclos, bars_total=39",
+        "detalle": "esqueleto de 4 secciones ['verse', 'verse', 'bridge', 'verse'] con reparto [11, 10, 8, 10] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "sections[verse_4].energy",
+        "regla": "R18",
+        "entrada": "energia=alta",
+        "detalle": "pico ajustado a 0.75 para el gate V112 (≥1 pico con energy ≥0.7, §6.1)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=sombrio",
+        "detalle": "tabla declarativa → 'experimental' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta doom_dark_jazz = 2 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=43",
+        "detalle": "'G minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='G minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "sections[bridge_3].energy",
+        "regla": "R21",
+        "entrada": "solo automático",
+        "detalle": "energía elevada: el solo nunca es la sección de menor energía (V113, §6.2)"
+      },
+      {
+        "campo": "solos",
+        "regla": "R22",
+        "entrada": "energia=alta, protagonista=rhodes",
+        "detalle": "solo de rhodes en bridge_3 (type=bridge; vía focus[] + comportamiento de motores, §9.2)"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=contenida, energia=alta, palette=None",
+        "detalle": "'atmospheric' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "identity.palette",
+        "regla": "R24",
+        "entrada": "no aportada",
+        "detalle": "paleta mínima ['atmospheric']: el perfil elegido queda incluido (§9.2)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de verse_4, E112)"
+      },
+      {
+        "campo": "title",
+        "regla": "R27",
+        "entrada": "seed=43",
+        "detalle": "título auto-generado 'Cámara Lenta' (metadata sin consumidor musical, §9.2)"
+      },
+      {
+        "campo": "sections[bridge_3].energy",
+        "regla": "RR1-V113",
+        "entrada": "solo en mínima energía",
+        "detalle": "energía elevada en re-resolución"
+      }
+    ],
+    "inputs_hash": "sha256:b753644c3cd6fd7919e0beab9715d413d9dcede3e3ed2b350c240128d31a1bd8",
+    "created_at": "2026-11-13T00:00:00Z"
+  }
+}

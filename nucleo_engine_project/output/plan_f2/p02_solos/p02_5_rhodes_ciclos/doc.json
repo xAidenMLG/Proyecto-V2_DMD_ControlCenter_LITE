@@ -1,0 +1,124 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Pulso de Medianoche",
+    "notes": "Automatic — dark_triphop en A minor (hybrid), 54 compases a 86 BPM: intro_1 (intro, 8), verse_2 (verse, 12), verse_3 (verse, 12), bridge_4 (bridge, 10), verse_5 (verse, 12); solo de rhodes en bridge_4, fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "dark_triphop",
+    "accessibility": "balanced"
+  },
+  "global": {
+    "bpm": 86,
+    "seed": 45
+  },
+  "harmony": {
+    "key": "A minor",
+    "language": "hybrid",
+    "harmonic_rhythm_bars": 1,
+    "progressions": {
+      "break": [
+        "Am9",
+        "Fmaj7"
+      ],
+      "bridge": [
+        "Fmaj7",
+        "Cmaj9"
+      ],
+      "chorus": [
+        "Fmaj9",
+        "Cmaj9",
+        "Dm9",
+        "E7sus4"
+      ],
+      "intro": [
+        "Am9"
+      ],
+      "outro": [
+        "Am9"
+      ],
+      "pre_chorus": [
+        "Dm9",
+        "E7sus4"
+      ],
+      "verse": [
+        "Am9",
+        "Fmaj9",
+        "Dm9",
+        "E7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "intro_1",
+      "type": "intro",
+      "bars": 8,
+      "energy": 0.44,
+      "tension": 0.2,
+      "density": 0.29,
+      "focus": [
+        "rhodes",
+        "pad"
+      ],
+      "drums": "air"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 12,
+      "energy": 0.64,
+      "tension": 0.35,
+      "density": 0.49,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "verse_3",
+      "type": "verse",
+      "bars": 12,
+      "energy": 0.64,
+      "tension": 0.35,
+      "density": 0.49,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "bridge_4",
+      "type": "bridge",
+      "bars": 10,
+      "energy": 0.74,
+      "tension": 0.6,
+      "density": 0.59,
+      "focus": [
+        "rhodes"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "verse_5",
+      "type": "verse",
+      "bars": 12,
+      "energy": 0.64,
+      "tension": 0.35,
+      "density": 0.49,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

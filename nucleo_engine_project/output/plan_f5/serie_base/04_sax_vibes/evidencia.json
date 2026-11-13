@@ -1,0 +1,53 @@
+{
+  "composicion": "Ciudad Dormida",
+  "perfil_produccion": "sax_vibes",
+  "seed": 172484,
+  "sha256_midi": "fbaebfba3ddc6a66a89db1ae020b6a0a774e2dd4fdb8d5f848a776010c7de715",
+  "sha256_doc": "92b32c1a306210d42c3c488a2f32f1dc0a9c27d2a4ca33176965365fd0c1301a",
+  "fecha_generacion_utc": "2026-11-13T05:28:53.521060+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 70.0,
+  "compases": 88,
+  "duracion_s": 301.7,
+  "notas_por_pista": {
+    "sax_tenor": 21,
+    "rhodes": 236,
+    "vibraphone": 28,
+    "bass": 228,
+    "drums": 0,
+    "pad": 152
+  },
+  "compliance_fails": [],
+  "compliance_warns": [
+    "motif_repeat"
+  ],
+  "avisos_compilador": [],
+  "resumen_actividad": {
+    "frases_sax": 5,
+    "rhodes_melodico_por_seccion": {},
+    "vibes_eco_por_seccion": {
+      "intro_1": 0,
+      "verse_2": 1,
+      "pre_chorus_3": 0,
+      "chorus_4": 0,
+      "break_5": 0,
+      "bridge_6": 0,
+      "verse_7": 0,
+      "chorus_8": 0,
+      "outro_9": 1
+    }
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production sax_vibes --seed 172484 --out output/plan_f5/serie_base/04_sax_vibes --verify fbaebfba3ddc6a66a89db1ae020b6a0a774e2dd4fdb8d5f848a776010c7de715",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"04_sax_vibes.mid\" -F salida.wav -r 44100"
+  }
+}

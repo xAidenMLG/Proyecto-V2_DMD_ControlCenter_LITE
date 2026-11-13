@@ -1,0 +1,36 @@
+{
+  "decision": "tablas fijas declarativas (P-01)",
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "combinaciones": 23,
+  "fallos": [],
+  "resumen_por_control": {
+    "energia": {
+      "valores": 5,
+      "validos_x_seed": 15
+    },
+    "forma": {
+      "valores": 3,
+      "validos_x_seed": 9
+    },
+    "duracion": {
+      "valores": 3,
+      "validos_x_seed": 9
+    },
+    "armonia": {
+      "valores": 4,
+      "validos_x_seed": 12
+    },
+    "pulso": {
+      "valores": 4,
+      "validos_x_seed": 12
+    },
+    "drums": {
+      "valores": 4,
+      "validos_x_seed": 12
+    }
+  }
+}

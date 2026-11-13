@@ -1,0 +1,179 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Ceniza Sobre el Mar",
+    "notes": "Automatic — doom_dark_jazz en E minor (hybrid), 86 compases a 69 BPM: intro_1 (intro, 7), verse_2 (verse, 11), pre_chorus_3 (pre_chorus, 5), chorus_4 (chorus, 13), break_5 (break, 11), bridge_6 (bridge, 9), verse_7 (verse, 11), chorus_8 (chorus, 13), outro_9 (outro, 6), fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "doom_dark_jazz",
+    "accessibility": "balanced"
+  },
+  "global": {
+    "bpm": 69,
+    "seed": 808
+  },
+  "harmony": {
+    "key": "E minor",
+    "language": "hybrid",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Em9",
+        "Cmaj7"
+      ],
+      "bridge": [
+        "Cmaj7",
+        "Gmaj9"
+      ],
+      "chorus": [
+        "Cmaj9",
+        "Gmaj9",
+        "Am9",
+        "B7sus4"
+      ],
+      "intro": [
+        "Em9"
+      ],
+      "outro": [
+        "Em9"
+      ],
+      "pre_chorus": [
+        "Am9",
+        "B7sus4"
+      ],
+      "verse": [
+        "Em9",
+        "Cmaj9",
+        "Am9",
+        "B7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "intro_1",
+      "type": "intro",
+      "bars": 7,
+      "energy": 0.25,
+      "tension": 0.45,
+      "density": 0.18,
+      "focus": [
+        "strings",
+        "bass"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 11,
+      "energy": 0.45,
+      "tension": 0.55,
+      "density": 0.38,
+      "focus": [
+        "sax_tenor",
+        "rhodes"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "pre_chorus_3",
+      "type": "pre_chorus",
+      "bars": 5,
+      "energy": 0.6,
+      "tension": 0.6,
+      "density": 0.5,
+      "focus": [
+        "vibraphone",
+        "sax_tenor"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "chorus_4",
+      "type": "chorus",
+      "bars": 13,
+      "energy": 0.75,
+      "tension": 0.55,
+      "density": 0.58,
+      "focus": [
+        "sax_tenor",
+        "bass",
+        "drums"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "break_5",
+      "type": "break",
+      "bars": 11,
+      "energy": 0.55,
+      "tension": 0.45,
+      "density": 0.42,
+      "focus": [
+        "sax_tenor",
+        "vibraphone"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "bridge_6",
+      "type": "bridge",
+      "bars": 9,
+      "energy": 0.35,
+      "tension": 0.75,
+      "density": 0.3,
+      "focus": [
+        "strings",
+        "piano"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "verse_7",
+      "type": "verse",
+      "bars": 11,
+      "energy": 0.45,
+      "tension": 0.55,
+      "density": 0.38,
+      "focus": [
+        "sax_tenor",
+        "rhodes"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "chorus_8",
+      "type": "chorus",
+      "bars": 13,
+      "energy": 0.75,
+      "tension": 0.55,
+      "density": 0.58,
+      "focus": [
+        "sax_tenor",
+        "bass",
+        "drums"
+      ],
+      "drums": "off"
+    },
+    {
+      "id": "outro_9",
+      "type": "outro",
+      "bars": 6,
+      "energy": 0.37,
+      "tension": 0.35,
+      "density": 0.15,
+      "focus": [
+        "strings",
+        "vibraphone"
+      ],
+      "drums": "off"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

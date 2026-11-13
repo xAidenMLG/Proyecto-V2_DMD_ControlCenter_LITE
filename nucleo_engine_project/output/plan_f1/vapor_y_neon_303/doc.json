@@ -1,0 +1,115 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Vapor y Neón",
+    "notes": "Pieza libre en Do# menor, 44 compases: apertura, tres cuerpos, sección de solo de vibraphone (break) y cierre con fade-out de 4 compases. Drums protagonista."
+  },
+  "direction": {
+    "identity": "doom_triphop",
+    "accessibility": "balanced"
+  },
+  "global": {
+    "bpm": 84,
+    "seed": 303
+  },
+  "harmony": {
+    "key": "C# minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "verse": [
+        "C#m9",
+        "Amaj9",
+        "Bmaj7",
+        "G#m7"
+      ],
+      "bridge": [
+        "F#m7",
+        "G#7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "apertura",
+      "type": "intro",
+      "bars": 4,
+      "energy": 0.35,
+      "tension": 0.3,
+      "density": 0.3,
+      "focus": [
+        "vibraphone",
+        "pad"
+      ],
+      "drums": "air"
+    },
+    {
+      "id": "cuerpo_1",
+      "type": "verse",
+      "bars": 8,
+      "energy": 0.55,
+      "tension": 0.45,
+      "density": 0.55,
+      "focus": [
+        "vibraphone"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "cuerpo_2",
+      "type": "bridge",
+      "bars": 6,
+      "energy": 0.65,
+      "tension": 0.6,
+      "density": 0.6,
+      "focus": [
+        "strings",
+        "vibraphone"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "solo_vibes",
+      "type": "break",
+      "bars": 8,
+      "energy": 0.85,
+      "tension": 0.55,
+      "density": 0.75,
+      "focus": [
+        "vibraphone"
+      ],
+      "drums": "heavy"
+    },
+    {
+      "id": "cuerpo_3",
+      "type": "verse",
+      "bars": 10,
+      "energy": 0.6,
+      "tension": 0.4,
+      "density": 0.5,
+      "focus": [
+        "sax_tenor",
+        "vibraphone"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "cierre",
+      "type": "outro",
+      "bars": 8,
+      "energy": 0.3,
+      "tension": 0.2,
+      "density": 0.25,
+      "focus": [
+        "pad"
+      ],
+      "drums": "air"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 4
+    }
+  }
+}

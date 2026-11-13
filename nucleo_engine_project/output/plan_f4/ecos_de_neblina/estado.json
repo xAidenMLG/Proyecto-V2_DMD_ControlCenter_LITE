@@ -1,0 +1,83 @@
+{
+  "schema": "dmd-album/1",
+  "pistas": {
+    "umbral_de_neblina": {
+      "estado": "ok",
+      "id": "umbral_de_neblina",
+      "indice": 1,
+      "perfil": "atmospheric",
+      "seed": 9000,
+      "harmony": null,
+      "especificacion": {
+        "sha256_doc": "ca01f668fd4c907e68d8df4397bef73a136fd68bb109b849262a4814781851aa",
+        "perfil": "atmospheric",
+        "seed": 9000,
+        "harmony": null
+      },
+      "carpeta": "output/plan_f4/ecos_de_neblina/01_umbral_de_neblina",
+      "intentos": 1,
+      "sha256_midi": "51bb6a6b8f3a11ecdc07ae9a214d49df4617b2d0ded14eebd7e70d0a3c6ce569",
+      "bpm": 80.0,
+      "compases": 50,
+      "duracion_s": 150.0,
+      "compliance_fails": [],
+      "compliance_warns": [
+        "motif_repeat"
+      ],
+      "huella_sha": "04845a7e6c72a5be"
+    },
+    "camara_de_espejos": {
+      "estado": "ok",
+      "id": "camara_de_espejos",
+      "indice": 2,
+      "perfil": "full",
+      "seed": 9101,
+      "harmony": null,
+      "especificacion": {
+        "sha256_doc": "9274d13e4be0bd48c1aee1ea2ca24ccf27f7b1c972d20e2a5dda362b037a401c",
+        "perfil": "full",
+        "seed": 9101,
+        "harmony": null
+      },
+      "carpeta": "output/plan_f4/ecos_de_neblina/02_camara_de_espejos",
+      "intentos": 1,
+      "sha256_midi": "511227d31a8ac2db2391390935e1a2592799646f7df4e2cb8a1e630915f02c6f",
+      "bpm": 80.0,
+      "compases": 100,
+      "duracion_s": 300.0,
+      "compliance_fails": [],
+      "compliance_warns": [
+        "motif_repeat"
+      ],
+      "huella_sha": "66fa3a32b74e0279"
+    },
+    "marea_baja_de_neon": {
+      "estado": "ok",
+      "id": "marea_baja_de_neon",
+      "indice": 3,
+      "perfil": "sax_rhodes",
+      "seed": 9202,
+      "harmony": null,
+      "especificacion": {
+        "sha256_doc": "b11bb25d4ff2aae556a1971ea851085f2f68c5001eed20418de05889eed9f8e9",
+        "perfil": "sax_rhodes",
+        "seed": 9202,
+        "harmony": null
+      },
+      "carpeta": "output/plan_f4/ecos_de_neblina/03_marea_baja_de_neon",
+      "intentos": 1,
+      "sha256_midi": "4b590b654666fba467df32196fbdaab1100b378b952a35cd5fca75d58d029893",
+      "bpm": 80.0,
+      "compases": 100,
+      "duracion_s": 300.0,
+      "compliance_fails": [],
+      "compliance_warns": [
+        "motif_repeat"
+      ],
+      "huella_sha": "414816e862c5bbfa"
+    }
+  },
+  "album": "Ecos de Neblina",
+  "semilla_album": 8899,
+  "actualizado_utc": "2026-11-13T05:19:55.664221+00:00"
+}

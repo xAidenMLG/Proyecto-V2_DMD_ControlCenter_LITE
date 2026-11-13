@@ -1,0 +1,112 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Catedral Rota",
+    "notes": "Automatic — doom_triphop en F# minor (experimental), 45 compases a 72 BPM: verse_1 (verse, 12), verse_2 (verse, 12), bridge_3 (bridge, 9), verse_4 (verse, 12), fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "doom_triphop",
+    "accessibility": "balanced"
+  },
+  "global": {
+    "bpm": 72,
+    "seed": 42
+  },
+  "harmony": {
+    "key": "F# minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Gbm9",
+        "Dmaj7"
+      ],
+      "bridge": [
+        "Dmaj7",
+        "Amaj9"
+      ],
+      "chorus": [
+        "Dmaj9",
+        "Amaj9",
+        "Bm9",
+        "Db7sus4"
+      ],
+      "intro": [
+        "Gbm9"
+      ],
+      "outro": [
+        "Gbm9"
+      ],
+      "pre_chorus": [
+        "Bm9",
+        "Db7sus4"
+      ],
+      "verse": [
+        "Gbm9",
+        "Dmaj9",
+        "Bm9",
+        "Db7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "verse_1",
+      "type": "verse",
+      "bars": 12,
+      "energy": 0.66,
+      "tension": 0.58,
+      "density": 0.52,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 12,
+      "energy": 0.66,
+      "tension": 0.58,
+      "density": 0.52,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "bridge_3",
+      "type": "bridge",
+      "bars": 9,
+      "energy": 0.75,
+      "tension": 0.78,
+      "density": 0.57,
+      "focus": [
+        "strings",
+        "rhodes"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "verse_4",
+      "type": "verse",
+      "bars": 12,
+      "energy": 0.66,
+      "tension": 0.58,
+      "density": 0.52,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

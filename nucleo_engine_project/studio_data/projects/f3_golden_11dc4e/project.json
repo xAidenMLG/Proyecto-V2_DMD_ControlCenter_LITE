@@ -1,0 +1,108 @@
+{
+  "id": "f3_golden_11dc4e",
+  "name": "f3_golden_11dc4e",
+  "description": "golden guiadas F3",
+  "created_utc": "2026-11-12T21:07:39.617306+00:00",
+  "updated_utc": "2026-11-12T21:07:40.115807+00:00",
+  "doc": {
+    "schema": "dark-director/1",
+    "meta": {
+      "title": "f3_golden_11dc4e",
+      "notes": ""
+    },
+    "direction": {
+      "identity": "dark_triphop",
+      "accessibility": "balanced"
+    },
+    "global": {
+      "bpm": 86,
+      "seed": 2026
+    },
+    "harmony": {
+      "key": "D minor",
+      "language": "pop_dream_pop",
+      "harmonic_rhythm_bars": 1
+    },
+    "instruments": {},
+    "structure": [
+      {
+        "id": "verse_1",
+        "type": "verse",
+        "bars": 16,
+        "energy": 0.45,
+        "tension": 0.35,
+        "density": 0.45,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove"
+      },
+      {
+        "id": "chorus_1",
+        "type": "chorus",
+        "bars": 16,
+        "energy": 0.75,
+        "tension": 0.5,
+        "density": 0.65,
+        "focus": [
+          "sax_tenor",
+          "drums",
+          "bass"
+        ],
+        "drums": "heavy",
+        "final": true
+      }
+    ],
+    "development": {},
+    "x_studio_creado": ""
+  },
+  "production": {
+    "profile": "full",
+    "seed": null,
+    "harmony": null,
+    "render_wav": false,
+    "out_name": ""
+  },
+  "history": [
+    {
+      "gen_id": "gen_0002",
+      "fecha_utc": "2026-11-12T21:07:40.115715+00:00",
+      "perfil": "full",
+      "seed": 142257,
+      "sha256_midi": "b56b01fa855407c820b98179d33ea5a66ed8e33e57dbee0acdd786af017b59a2",
+      "duracion_s": 150.7,
+      "bpm": 86.0,
+      "compases": 54,
+      "compliance_fails": [],
+      "compliance_warns": [
+        "motif_repeat"
+      ],
+      "harmonia": null,
+      "out_name": "guided_song",
+      "wav": null,
+      "elapsed_s": 0.2,
+      "carpeta": "generations/gen_0002"
+    },
+    {
+      "gen_id": "gen_0001",
+      "fecha_utc": "2026-11-12T21:07:39.779353+00:00",
+      "perfil": "full",
+      "seed": 721106,
+      "sha256_midi": "9dda0282c42acb66b57782963e52d102023190f2f22e1df99ca5b83a93d42650",
+      "duracion_s": 150.7,
+      "bpm": 86.0,
+      "compases": 54,
+      "compliance_fails": [],
+      "compliance_warns": [
+        "motif_repeat"
+      ],
+      "harmonia": null,
+      "out_name": "guided_song",
+      "wav": null,
+      "elapsed_s": 0.2,
+      "carpeta": "generations/gen_0001"
+    }
+  ],
+  "seq": 2
+}

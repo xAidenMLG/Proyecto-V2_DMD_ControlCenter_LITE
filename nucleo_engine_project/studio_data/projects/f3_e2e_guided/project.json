@@ -1,0 +1,91 @@
+{
+  "id": "f3_e2e_guided",
+  "name": "F3 E2E Guided",
+  "description": "Prueba end-to-end de la fase 3 desde la interfaz",
+  "created_utc": "2026-11-12T21:17:38.761437+00:00",
+  "updated_utc": "2026-11-12T21:17:58.295163+00:00",
+  "doc": {
+    "schema": "dark-director/1",
+    "meta": {
+      "title": "F3 E2E Guided",
+      "notes": ""
+    },
+    "direction": {
+      "identity": "dark_triphop",
+      "accessibility": "balanced"
+    },
+    "global": {
+      "bpm": 86,
+      "seed": 2026
+    },
+    "harmony": {
+      "key": "D minor",
+      "language": "pop_dream_pop",
+      "harmonic_rhythm_bars": 1
+    },
+    "instruments": {},
+    "structure": [
+      {
+        "id": "verse_1",
+        "type": "verse",
+        "bars": 16,
+        "energy": 0.45,
+        "tension": 0.35,
+        "density": 0.45,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove"
+      },
+      {
+        "id": "chorus_1",
+        "type": "chorus",
+        "bars": 16,
+        "energy": 0.75,
+        "tension": 0.5,
+        "density": 0.65,
+        "focus": [
+          "sax_tenor",
+          "drums",
+          "bass"
+        ],
+        "drums": "heavy",
+        "final": true
+      }
+    ],
+    "development": {},
+    "x_studio_creado": ""
+  },
+  "production": {
+    "profile": "full",
+    "seed": null,
+    "harmony": null,
+    "render_wav": false,
+    "out_name": ""
+  },
+  "history": [
+    {
+      "gen_id": "gen_0001",
+      "fecha_utc": "2026-11-12T21:17:58.295075+00:00",
+      "perfil": "full",
+      "seed": 576954,
+      "sha256_midi": "572d18b59a71431cc985a8a236dea57741fc9ec7be9a6b01c2e4a85253f361ef",
+      "duracion_s": 149.6,
+      "bpm": 77.0,
+      "compases": 48,
+      "compliance_fails": [
+        "lead_mono_range"
+      ],
+      "compliance_warns": [
+        "section_bounds"
+      ],
+      "harmonia": null,
+      "out_name": "camara_de_eco",
+      "wav": null,
+      "elapsed_s": 0.2,
+      "carpeta": "generations/gen_0001"
+    }
+  ],
+  "seq": 1
+}

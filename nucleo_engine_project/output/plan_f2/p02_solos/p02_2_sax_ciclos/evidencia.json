@@ -1,0 +1,56 @@
+{
+  "composicion": "Catedral Rota",
+  "perfil_produccion": "full",
+  "seed": 42,
+  "sha256_midi": "bfc3e6c1a1167c31a3614093f8a18ca68138f3a317f40f00a565fe99cf608832",
+  "sha256_doc": "6de1764762b1e53a5e297db9bfcfa5e758b1d2340c99610d7255250ed1966029",
+  "fecha_generacion_utc": "2026-11-12T19:31:27.239044+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 72.0,
+  "compases": 45,
+  "duracion_s": 150.0,
+  "notas_por_pista": {
+    "sax_tenor": 12,
+    "rhodes": 123,
+    "vibraphone": 9,
+    "bass": 135,
+    "drums": 438,
+    "pad": 51,
+    "strings": 121
+  },
+  "compliance_fails": [
+    "lead_mono_range"
+  ],
+  "compliance_warns": [],
+  "avisos_compilador": [
+    "W417: chord_bars/harmonic_rhythm_bars (2) no divide los 9 compases de 'bridge_3' (último acorde recortado)"
+  ],
+  "resumen_actividad": {
+    "frases_sax": 3,
+    "rhodes_melodico_por_seccion": {
+      "verse_1": 0,
+      "verse_2": 0,
+      "bridge_3": 0,
+      "verse_4": 0
+    },
+    "vibes_eco_por_seccion": {
+      "verse_1": 0,
+      "verse_2": 0,
+      "bridge_3": 0,
+      "verse_4": 0
+    }
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production full --seed 42 --out /home/z/my-project/nucleo_engine_project/output/plan_f2/p02_solos/p02_2_sax_ciclos --verify bfc3e6c1a1167c31a3614093f8a18ca68138f3a317f40f00a565fe99cf608832",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"p02_2_sax_ciclos.mid\" -F salida.wav -r 44100"
+  }
+}

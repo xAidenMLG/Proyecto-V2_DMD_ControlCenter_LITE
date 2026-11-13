@@ -1,0 +1,10 @@
+{
+  "nombre": "f2_101_dark_triphop",
+  "perfil": "full",
+  "sha256_doc": "830fd451a77f65ba3fcb4dcd0066b81beb1a6ade1869faf746425a66636698d4",
+  "sha256_midi": "34a5d4c93738ab7e92f889a84f234caa1a5e5cfa74a9ca0838af7fcef2336023",
+  "seed": 101,
+  "bpm": 80,
+  "bars_total": 50,
+  "key": "F minor"
+}

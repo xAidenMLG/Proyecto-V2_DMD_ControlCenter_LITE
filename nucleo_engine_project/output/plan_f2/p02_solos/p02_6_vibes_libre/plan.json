@@ -1,0 +1,234 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 46,
+  "title": "Sala sin Esquinas",
+  "identity": {
+    "style": "doom_dark_jazz",
+    "accessibility": "balanced",
+    "protagonist": "vibraphone",
+    "palette": [
+      "sax_rhodes"
+    ]
+  },
+  "controls": {
+    "energia": "alta",
+    "drums": "ausente",
+    "forma": "libre",
+    "duracion": "corta",
+    "armonia": "sombrio",
+    "pulso": "swing"
+  },
+  "album_context": null,
+  "form": {
+    "template": "libre",
+    "sections": [
+      {
+        "id": "intro_1",
+        "type": "intro",
+        "bars": 8,
+        "energy": 0.45,
+        "tension": 0.57,
+        "density": 0.18,
+        "focus": [
+          "strings",
+          "bass"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 13,
+        "energy": 0.75,
+        "tension": 0.67,
+        "density": 0.38,
+        "focus": [
+          "sax_tenor",
+          "rhodes"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "bridge_3",
+        "type": "bridge",
+        "bars": 10,
+        "energy": 0.55,
+        "tension": 0.87,
+        "density": 0.3,
+        "focus": [
+          "vibraphone"
+        ],
+        "drums": "off",
+        "locked": false
+      },
+      {
+        "id": "outro_4",
+        "type": "outro",
+        "bars": 8,
+        "energy": 0.4,
+        "tension": 0.47,
+        "density": 0.15,
+        "focus": [
+          "strings",
+          "vibraphone"
+        ],
+        "drums": "off",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "Bb minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Bbm9",
+        "Gbmaj7"
+      ],
+      "bridge": [
+        "Gbmaj7",
+        "Dbmaj9"
+      ],
+      "chorus": [
+        "Gbmaj9",
+        "Dbmaj9",
+        "Ebm9",
+        "F7sus4"
+      ],
+      "intro": [
+        "Bbm9"
+      ],
+      "outro": [
+        "Bbm9"
+      ],
+      "pre_chorus": [
+        "Ebm9",
+        "F7sus4"
+      ],
+      "verse": [
+        "Bbm9",
+        "Gbmaj9",
+        "Ebm9",
+        "F7sus4"
+      ]
+    }
+  },
+  "solos": [
+    {
+      "section_id": "bridge_3",
+      "instrument": "vibraphone"
+    }
+  ],
+  "orchestration": {
+    "profile": "sax_rhodes"
+  },
+  "global": {
+    "bpm": 62
+  },
+  "duration": {
+    "target": "corta",
+    "bars_total": 39
+  },
+  "notes": "Automatic — doom_dark_jazz en Bb minor (experimental), 39 compases a 62 BPM: intro_1 (intro, 8), verse_2 (verse, 13), bridge_3 (bridge, 10), outro_4 (outro, 8); solo de vibraphone en bridge_3, fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "controls.pulso",
+        "regla": "R29",
+        "entrada": "pulso=auto",
+        "detalle": "pulso de la casa: 'swing'; el tempo lo fija BPM_DEFAULT de la receta (R11)"
+      },
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=swing",
+        "detalle": "pulso auto → BPM_DEFAULT de la receta doom_dark_jazz = 62 (§3.1)"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='corta', bpm=62",
+        "detalle": "39 compases ≈ 2.5 min (banda 'corta')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=libre, bars_total=39",
+        "detalle": "esqueleto de 4 secciones ['intro', 'verse', 'bridge', 'outro'] con reparto [8, 13, 10, 8] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "sections[verse_2].energy",
+        "regla": "R18",
+        "entrada": "energia=alta",
+        "detalle": "pico ajustado a 0.75 para el gate V112 (≥1 pico con energy ≥0.7, §6.1)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=sombrio",
+        "detalle": "tabla declarativa → 'experimental' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta doom_dark_jazz = 2 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=46",
+        "detalle": "'Bb minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='Bb minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "solos",
+        "regla": "R22",
+        "entrada": "energia=alta, protagonista=vibraphone",
+        "detalle": "solo de vibraphone en bridge_3 (type=bridge; vía focus[] + comportamiento de motores, §9.2)"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=ausente, energia=alta, palette=None",
+        "detalle": "'sax_rhodes' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "identity.palette",
+        "regla": "R24",
+        "entrada": "no aportada",
+        "detalle": "paleta mínima ['sax_rhodes']: el perfil elegido queda incluido (§9.2)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de outro_4, E112)"
+      },
+      {
+        "campo": "title",
+        "regla": "R27",
+        "entrada": "seed=46",
+        "detalle": "título auto-generado 'Sala sin Esquinas' (metadata sin consumidor musical, §9.2)"
+      }
+    ],
+    "inputs_hash": "sha256:87347e314c37d145c155d510ad059a84065eaae78eb4295ae9583f0728f4c6ba",
+    "created_at": "2026-11-13T00:00:00Z"
+  }
+}

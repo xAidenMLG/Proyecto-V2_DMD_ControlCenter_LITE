@@ -1,0 +1,125 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Cámara de Eco",
+    "notes": "Automatic — doom_triphop en F# minor (experimental), 48 compases a 77 BPM: intro_1 (intro, 7), verse_2 (verse, 11), verse_3 (verse, 11), bridge_4 (bridge, 9), verse_5 (verse, 10); solo de vibraphone en bridge_4, fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "doom_triphop",
+    "accessibility": "experimental"
+  },
+  "global": {
+    "bpm": 77,
+    "seed": 576954
+  },
+  "harmony": {
+    "key": "F# minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Gbm9",
+        "Dmaj7"
+      ],
+      "bridge": [
+        "Dmaj7",
+        "Amaj9"
+      ],
+      "chorus": [
+        "Dmaj9",
+        "Amaj9",
+        "Bm9",
+        "Db7sus4"
+      ],
+      "intro": [
+        "Gbm9"
+      ],
+      "outro": [
+        "Gbm9"
+      ],
+      "pre_chorus": [
+        "Bm9",
+        "Db7sus4"
+      ],
+      "verse": [
+        "Gbm9",
+        "Dmaj9",
+        "Bm9",
+        "Db7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "intro_1",
+      "type": "intro",
+      "bars": 7,
+      "energy": 0.61,
+      "tension": 0.47,
+      "density": 0.24,
+      "focus": [
+        "vibraphone",
+        "pad",
+        "strings"
+      ],
+      "drums": "air"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 11,
+      "energy": 0.81,
+      "tension": 0.62,
+      "density": 0.44,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "verse_3",
+      "type": "verse",
+      "bars": 11,
+      "energy": 0.81,
+      "tension": 0.62,
+      "density": 0.44,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "bridge_4",
+      "type": "bridge",
+      "bars": 9,
+      "energy": 0.86,
+      "tension": 0.82,
+      "density": 0.49,
+      "focus": [
+        "vibraphone"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "verse_5",
+      "type": "verse",
+      "bars": 10,
+      "energy": 0.81,
+      "tension": 0.62,
+      "density": 0.44,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

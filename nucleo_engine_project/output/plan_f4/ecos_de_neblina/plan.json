@@ -1,0 +1,194 @@
+{
+  "schema": "dmd-album-plan/1",
+  "album": "Ecos de Neblina",
+  "identidad": "dark_triphop",
+  "semilla_album": 8899,
+  "restricciones": {
+    "perfil_frac_max": 0.4,
+    "respiro_cada": 5,
+    "prohibir_consecutivos_iguales": true
+  },
+  "raiz": "/home/z/my-project/nucleo_engine_project/albumes/ecos_de_neblina",
+  "creado_utc": "2026-11-13T05:19:55.401399+00:00",
+  "versiones": {
+    "album": "8.0.0",
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "pistas": [
+    {
+      "indice": 1,
+      "id": "umbral_de_neblina",
+      "titulo": "Umbral de Neblina",
+      "rol": "apertura — la neblina entra y la casa aparece",
+      "doc": "docs/01_umbral_de_neblina.json",
+      "doc_resuelto": "/home/z/my-project/nucleo_engine_project/albumes/ecos_de_neblina/docs/01_umbral_de_neblina.json",
+      "sha256_doc": "ca01f668fd4c907e68d8df4397bef73a136fd68bb109b849262a4814781851aa",
+      "perfil": "atmospheric",
+      "seed": 9000,
+      "origen_seed": "especificado",
+      "harmony": null,
+      "digest": {
+        "titulo": "Umbral de Neblina",
+        "bpm": 80,
+        "seed_global": 9000,
+        "tonalidad": "F minor",
+        "lenguaje": "pop_dream_pop",
+        "resolucion": null,
+        "compases": 50,
+        "n_secciones": 5,
+        "tipos_seccion": [
+          "intro",
+          "verse",
+          "pre_chorus",
+          "chorus",
+          "outro"
+        ],
+        "energia_media": 0.494,
+        "energia_max": 0.79,
+        "tension_media": 0.3,
+        "densidad_media": 0.39,
+        "secciones_con_material_escrito": [],
+        "ending": [
+          "fade_out"
+        ]
+      },
+      "perfil_origen": "especificado"
+    },
+    {
+      "indice": 2,
+      "id": "camara_de_espejos",
+      "titulo": "Cámara de Espejos",
+      "rol": "clímax — el vibraphone refleja la casa y toma el momento",
+      "doc": "docs/02_camara_de_espejos.json",
+      "doc_resuelto": "/home/z/my-project/nucleo_engine_project/albumes/ecos_de_neblina/docs/02_camara_de_espejos.json",
+      "sha256_doc": "9274d13e4be0bd48c1aee1ea2ca24ccf27f7b1c972d20e2a5dda362b037a401c",
+      "perfil": "full",
+      "seed": 9101,
+      "origen_seed": "especificado",
+      "harmony": null,
+      "digest": {
+        "titulo": "Cámara de Espejos",
+        "bpm": 80,
+        "seed_global": 9101,
+        "tonalidad": "Bb minor",
+        "lenguaje": "pop_dream_pop",
+        "resolucion": null,
+        "compases": 100,
+        "n_secciones": 9,
+        "tipos_seccion": [
+          "intro",
+          "verse",
+          "pre_chorus",
+          "chorus",
+          "break",
+          "bridge",
+          "verse",
+          "chorus",
+          "outro"
+        ],
+        "energia_media": 0.699,
+        "energia_max": 0.95,
+        "tension_media": 0.372,
+        "densidad_media": 0.466,
+        "secciones_con_material_escrito": [],
+        "ending": [
+          "fade_out"
+        ]
+      },
+      "perfil_origen": "especificado"
+    },
+    {
+      "indice": 3,
+      "id": "marea_baja_de_neon",
+      "titulo": "Marea Baja de Neón",
+      "rol": "cierre — la ciudad respira; el sax acompaña al rhodes",
+      "doc": "docs/03_marea_baja_de_neon.json",
+      "doc_resuelto": "/home/z/my-project/nucleo_engine_project/albumes/ecos_de_neblina/docs/03_marea_baja_de_neon.json",
+      "sha256_doc": "b11bb25d4ff2aae556a1971ea851085f2f68c5001eed20418de05889eed9f8e9",
+      "perfil": "sax_rhodes",
+      "seed": 9202,
+      "origen_seed": "especificado",
+      "harmony": null,
+      "digest": {
+        "titulo": "Marea Baja de Neón",
+        "bpm": 80,
+        "seed_global": 9202,
+        "tonalidad": "F minor",
+        "lenguaje": "pop_dream_pop",
+        "resolucion": null,
+        "compases": 100,
+        "n_secciones": 9,
+        "tipos_seccion": [
+          "intro",
+          "verse",
+          "pre_chorus",
+          "chorus",
+          "break",
+          "break",
+          "verse",
+          "chorus",
+          "outro"
+        ],
+        "energia_media": 0.229,
+        "energia_max": 0.49,
+        "tension_media": 0.372,
+        "densidad_media": 0.366,
+        "secciones_con_material_escrito": [],
+        "ending": [
+          "fade_out"
+        ]
+      },
+      "perfil_origen": "especificado"
+    }
+  ],
+  "errores_documentos": [],
+  "analisis": {
+    "diversidad_pre": {
+      "perfiles": {
+        "atmospheric": 1,
+        "full": 1,
+        "sax_rhodes": 1
+      },
+      "frac_max_config": 0.4,
+      "exceso_perfil": [],
+      "respiro_cada": 5,
+      "ventanas_sin_respiro": [],
+      "consecutivos_iguales": [],
+      "tonalidades_pegadas": [],
+      "bpm_fuera_de_rango": [],
+      "bpm_rango_sano": [
+        76,
+        92
+      ],
+      "distancia_tonal_consecutivas": [
+        5,
+        5
+      ]
+    },
+    "curva_energia": {
+      "objetivo": [
+        0.45,
+        0.78,
+        0.15
+      ],
+      "real": [
+        0.494,
+        0.699,
+        0.229
+      ],
+      "desviacion": [
+        0.044,
+        0.081,
+        0.079
+      ]
+    },
+    "avisos": []
+  }
+}

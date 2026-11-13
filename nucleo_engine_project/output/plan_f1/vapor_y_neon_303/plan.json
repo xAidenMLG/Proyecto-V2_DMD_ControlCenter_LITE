@@ -1,0 +1,155 @@
+{
+  "plan_version": 1,
+  "mode": "guided",
+  "seed": 303,
+  "title": "Vapor y Neón",
+  "identity": {
+    "style": "doom_triphop",
+    "accessibility": "balanced",
+    "protagonist": "vibraphone",
+    "palette": [
+      "full"
+    ]
+  },
+  "controls": {
+    "energia": "alta",
+    "forma": "libre",
+    "duracion": "corta",
+    "armonia": "sombrio",
+    "pulso": "recto",
+    "drums": "protagonista"
+  },
+  "album_context": null,
+  "form": {
+    "template": "libre",
+    "sections": [
+      {
+        "id": "apertura",
+        "type": "intro",
+        "bars": 4,
+        "energy": 0.35,
+        "tension": 0.3,
+        "density": 0.3,
+        "focus": [
+          "vibraphone",
+          "pad"
+        ],
+        "drums": "air",
+        "locked": false
+      },
+      {
+        "id": "cuerpo_1",
+        "type": "verse",
+        "bars": 8,
+        "energy": 0.55,
+        "tension": 0.45,
+        "density": 0.55,
+        "focus": [
+          "vibraphone"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "cuerpo_2",
+        "type": "bridge",
+        "bars": 6,
+        "energy": 0.65,
+        "tension": 0.6,
+        "density": 0.6,
+        "focus": [
+          "strings",
+          "vibraphone"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "solo_vibes",
+        "type": "break",
+        "bars": 8,
+        "energy": 0.85,
+        "tension": 0.55,
+        "density": 0.75,
+        "focus": [
+          "vibraphone"
+        ],
+        "drums": "heavy",
+        "locked": false
+      },
+      {
+        "id": "cuerpo_3",
+        "type": "verse",
+        "bars": 10,
+        "energy": 0.6,
+        "tension": 0.4,
+        "density": 0.5,
+        "focus": [
+          "sax_tenor",
+          "vibraphone"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "cierre",
+        "type": "outro",
+        "bars": 8,
+        "energy": 0.3,
+        "tension": 0.2,
+        "density": 0.25,
+        "focus": [
+          "pad"
+        ],
+        "drums": "air",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 4
+    }
+  },
+  "harmony": {
+    "key": "C# minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "verse": [
+        "C#m9",
+        "Amaj9",
+        "Bmaj7",
+        "G#m7"
+      ],
+      "bridge": [
+        "F#m7",
+        "G#7sus4"
+      ]
+    }
+  },
+  "solos": [
+    {
+      "section_id": "solo_vibes",
+      "instrument": "vibraphone"
+    }
+  ],
+  "orchestration": {
+    "profile": "full"
+  },
+  "global": {
+    "bpm": 84
+  },
+  "duration": {
+    "target": "corta",
+    "bars_total": 44
+  },
+  "notes": "Pieza libre en Do# menor, 44 compases: apertura, tres cuerpos, sección de solo de vibraphone (break) y cierre con fade-out de 4 compases. Drums protagonista.",
+  "evidence": {
+    "resolved_by": "manual@fase1",
+    "resolved": [],
+    "inputs_hash": "sha256:8167388f384927a16452352ae8141426efa1efedd3349eb1d4d1ee4611883f96",
+    "created_at": "2026-11-12T00:00:00Z"
+  }
+}

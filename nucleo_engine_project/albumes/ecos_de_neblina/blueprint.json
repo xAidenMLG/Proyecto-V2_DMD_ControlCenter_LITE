@@ -1,0 +1,55 @@
+{
+  "schema": "dmd-album-blueprint/1",
+  "album": "Ecos de Neblina",
+  "semilla_album": 8899,
+  "tonica": "F minor",
+  "identidad": {
+    "style": "dark_triphop",
+    "accessibility": "balanced",
+    "protagonista": "sax_tenor",
+    "paleta_perfiles": ["atmospheric", "full", "sax_rhodes"],
+    "armonia": "nocturno",
+    "pulso": "swing"
+  },
+  "arco": [
+    {
+      "id": "umbral_de_neblina",
+      "titulo": "Umbral de Neblina",
+      "rol": "apertura — la neblina entra y la casa aparece",
+      "energia": 0.45,
+      "duracion": "corta",
+      "drums": "contenida",
+      "variacion_protagonista": "mismo"
+    },
+    {
+      "id": "camara_de_espejos",
+      "titulo": "Cámara de Espejos",
+      "rol": "clímax — el vibraphone refleja la casa y toma el momento",
+      "energia": 0.78,
+      "duracion": "media",
+      "drums": "protagonista",
+      "variacion_protagonista": "registro_distinto"
+    },
+    {
+      "id": "marea_baja_de_neon",
+      "titulo": "Marea Baja de Neón",
+      "rol": "cierre — la ciudad respira; el sax acompaña al rhodes",
+      "energia": 0.15,
+      "duracion": "media",
+      "drums": "ausente",
+      "variacion_protagonista": "rol_acompanante",
+      "solo": "rhodes"
+    }
+  ],
+  "motivo_firma": {
+    "nombre": "firma_neblina",
+    "compases": 4,
+    "frase": [
+      {"bar": 0, "beat": 0.0, "pitch": 65, "dur": 1.5, "vel": 70},
+      {"bar": 1, "beat": 0.0, "pitch": 68, "dur": 1.0, "vel": 72},
+      {"bar": 2, "beat": 0.0, "pitch": 72, "dur": 2.0, "vel": 74},
+      {"bar": 3, "beat": 0.0, "pitch": 70, "dur": 1.5, "vel": 70},
+      {"bar": 3, "beat": 2.0, "pitch": 67, "dur": 1.0, "vel": 68}
+    ]
+  }
+}

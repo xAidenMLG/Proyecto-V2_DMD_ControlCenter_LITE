@@ -1,0 +1,55 @@
+{
+  "composicion": "Lluvia en el Asfalto",
+  "perfil_produccion": "full",
+  "seed": 142257,
+  "sha256_midi": "b56b01fa855407c820b98179d33ea5a66ed8e33e57dbee0acdd786af017b59a2",
+  "sha256_doc": "d1a9900cb825eab510c8d7d12594cfec11b0e25b123f68e3608a8516a791c06a",
+  "fecha_generacion_utc": "2026-11-12T21:07:40.102112+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 86.0,
+  "compases": 54,
+  "duracion_s": 150.7,
+  "notas_por_pista": {
+    "sax_tenor": 7,
+    "rhodes": 121,
+    "vibraphone": 13,
+    "bass": 120,
+    "drums": 413,
+    "pad": 78
+  },
+  "compliance_fails": [],
+  "compliance_warns": [
+    "motif_repeat"
+  ],
+  "avisos_compilador": [],
+  "resumen_actividad": {
+    "frases_sax": 2,
+    "rhodes_melodico_por_seccion": {
+      "intro_1": 2,
+      "verse_2": 2,
+      "pre_chorus_3": 0,
+      "chorus_4": 0,
+      "outro_5": 0
+    },
+    "vibes_eco_por_seccion": {
+      "intro_1": 0,
+      "verse_2": 0,
+      "pre_chorus_3": 1,
+      "chorus_4": 0,
+      "outro_5": 0
+    }
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production full --seed 142257 --out /home/z/my-project/nucleo_engine_project/studio_data/projects/f3_golden_11dc4e/generations/gen_0002/guided_song --verify b56b01fa855407c820b98179d33ea5a66ed8e33e57dbee0acdd786af017b59a2",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"guided_song.mid\" -F salida.wav -r 44100"
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "plan_version": 1,
+  "mode": "automatic",
+  "seed": 576954,
+  "title": "Cámara de Eco",
+  "identity": {
+    "style": "doom_triphop",
+    "accessibility": "experimental",
+    "protagonist": "vibraphone",
+    "palette": [
+      "full"
+    ]
+  },
+  "controls": {
+    "energia": "muy_alta",
+    "drums": "presente",
+    "forma": "ciclos",
+    "duracion": "corta",
+    "armonia": "sombrio",
+    "pulso": "recto"
+  },
+  "album_context": null,
+  "form": {
+    "template": "ciclos",
+    "sections": [
+      {
+        "id": "intro_1",
+        "type": "intro",
+        "bars": 7,
+        "energy": 0.61,
+        "tension": 0.47,
+        "density": 0.24,
+        "focus": [
+          "vibraphone",
+          "pad",
+          "strings"
+        ],
+        "drums": "air",
+        "locked": false
+      },
+      {
+        "id": "verse_2",
+        "type": "verse",
+        "bars": 11,
+        "energy": 0.81,
+        "tension": 0.62,
+        "density": 0.44,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "verse_3",
+        "type": "verse",
+        "bars": 11,
+        "energy": 0.81,
+        "tension": 0.62,
+        "density": 0.44,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      },
+      {
+        "id": "bridge_4",
+        "type": "bridge",
+        "bars": 9,
+        "energy": 0.86,
+        "tension": 0.82,
+        "density": 0.49,
+        "focus": [
+          "vibraphone"
+        ],
+        "drums": "light",
+        "locked": false
+      },
+      {
+        "id": "verse_5",
+        "type": "verse",
+        "bars": 10,
+        "energy": 0.81,
+        "tension": 0.62,
+        "density": 0.44,
+        "focus": [
+          "sax_tenor",
+          "drums"
+        ],
+        "drums": "groove",
+        "locked": false
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "F# minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Gbm9",
+        "Dmaj7"
+      ],
+      "bridge": [
+        "Dmaj7",
+        "Amaj9"
+      ],
+      "chorus": [
+        "Dmaj9",
+        "Amaj9",
+        "Bm9",
+        "Db7sus4"
+      ],
+      "intro": [
+        "Gbm9"
+      ],
+      "outro": [
+        "Gbm9"
+      ],
+      "pre_chorus": [
+        "Bm9",
+        "Db7sus4"
+      ],
+      "verse": [
+        "Gbm9",
+        "Dmaj9",
+        "Bm9",
+        "Db7sus4"
+      ]
+    }
+  },
+  "solos": [
+    {
+      "section_id": "bridge_4",
+      "instrument": "vibraphone"
+    }
+  ],
+  "orchestration": {
+    "profile": "full"
+  },
+  "global": {
+    "bpm": 77
+  },
+  "duration": {
+    "target": "corta",
+    "bars_total": 48
+  },
+  "notes": "Automatic — doom_triphop en F# minor (experimental), 48 compases a 77 BPM: intro_1 (intro, 7), verse_2 (verse, 11), verse_3 (verse, 11), bridge_4 (bridge, 9), verse_5 (verse, 10); solo de vibraphone en bridge_4, fade-out de 2 compases.",
+  "evidence": {
+    "resolved_by": "interprete@fase2",
+    "resolved": [
+      {
+        "campo": "controls.drums",
+        "regla": "R2",
+        "entrada": "energia=muy_alta",
+        "detalle": "default declarativo: 'presente' (§7.1: interacción energía-drums)"
+      },
+      {
+        "campo": "controls.armonia",
+        "regla": "R6",
+        "entrada": "armonia=auto, accessibility=experimental",
+        "detalle": "tabla declarativa por accesibilidad → 'sombrio' (§7.2.2)"
+      },
+      {
+        "campo": "seed",
+        "regla": "R0",
+        "entrada": "no aportada",
+        "detalle": "seed auto-generada 576954 por sha256 de identidad+controles (§9.2, §7.2.5; intérprete puro, reproducible)"
+      },
+      {
+        "campo": "global.bpm",
+        "regla": "R11",
+        "entrada": "controls.pulso=recto",
+        "detalle": "tabla declarativa FRACCION_BPM['recto'] sobre BPM_RANGO_TIPICO (58, 90) → 77"
+      },
+      {
+        "campo": "duration.bars_total",
+        "regla": "R14",
+        "entrada": "target='corta', bpm=77",
+        "detalle": "48 compases ≈ 2.5 min (banda 'corta')"
+      },
+      {
+        "campo": "form.sections",
+        "regla": "R17",
+        "entrada": "plantilla=ciclos, bars_total=48",
+        "detalle": "esqueleto de 5 secciones ['intro', 'verse', 'verse', 'bridge', 'verse'] con reparto [7, 11, 11, 9, 10] (PESO_BARS; §7.1)"
+      },
+      {
+        "campo": "harmony.language",
+        "regla": "R5",
+        "entrada": "controls.armonia=sombrio",
+        "detalle": "tabla declarativa → 'experimental' (§7.1)"
+      },
+      {
+        "campo": "harmony.harmonic_rhythm_bars",
+        "regla": "R7",
+        "entrada": "no aportado",
+        "detalle": "default de la receta doom_triphop = 2 (§3.2: default = receta)"
+      },
+      {
+        "campo": "harmony.key",
+        "regla": "R8",
+        "entrada": "seed=576954",
+        "detalle": "'F# minor' elegida del pool de 12 tonalidades que pasan V110 con los patrones de progresión"
+      },
+      {
+        "campo": "harmony.progressions",
+        "regla": "R9",
+        "entrada": "key='F# minor'",
+        "detalle": "instanciadas de PATRONES_PROGRESION (derivados del ancla de la casa; hallazgo F2 sobre las tablas de receta, ver informe) para los 7 types del contrato"
+      },
+      {
+        "campo": "solos",
+        "regla": "R22",
+        "entrada": "energia=muy_alta, protagonista=vibraphone",
+        "detalle": "solo de vibraphone en bridge_4 (type=bridge; vía focus[] + comportamiento de motores, §9.2)"
+      },
+      {
+        "campo": "orchestration.profile",
+        "regla": "R23",
+        "entrada": "drums=presente, energia=muy_alta, palette=None",
+        "detalle": "'full' (V111 coherente; original excluido del Automatic, P-06)"
+      },
+      {
+        "campo": "identity.palette",
+        "regla": "R24",
+        "entrada": "no aportada",
+        "detalle": "paleta mínima ['full']: el perfil elegido queda incluido (§9.2)"
+      },
+      {
+        "campo": "form.sections[].focus",
+        "regla": "R25",
+        "entrada": "protagonista=vibraphone",
+        "detalle": "añadido a focus de ['intro_1'] (≥2 secciones, §6.2)"
+      },
+      {
+        "campo": "ending",
+        "regla": "R26",
+        "entrada": "no aportado",
+        "detalle": "fade-out de 2 compases (≤ compases de verse_5, E112)"
+      }
+    ],
+    "inputs_hash": "sha256:563a96fe0a349696f54184b3e8163460fb9a16d915faa767449426f9451d67e7",
+    "created_at": "2026-11-12T21:17:58Z"
+  }
+}

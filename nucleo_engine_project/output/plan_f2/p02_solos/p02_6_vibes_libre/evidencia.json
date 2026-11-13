@@ -1,0 +1,49 @@
+{
+  "composicion": "Sala sin Esquinas",
+  "perfil_produccion": "sax_rhodes",
+  "seed": 46,
+  "sha256_midi": "b27861e9eed2b1b37cae641e52d91e2f64254792de77449a9bf4dd58bb4042f0",
+  "sha256_doc": "66601cec277bf8be6535f8a9ca9311f1abbd6e2e55f12fa4cb3e67b77f0caef3",
+  "fecha_generacion_utc": "2026-11-12T19:31:27.526414+00:00",
+  "versiones": {
+    "jazz_engine": "7.0.0",
+    "contrato": {
+      "contract": "dark-director/1",
+      "contract_rev": "3.2",
+      "compiler_version": "0.1.0",
+      "compiler_stage": "fase1",
+      "target_schema": "midi-forge/1"
+    }
+  },
+  "bpm": 62.0,
+  "compases": 39,
+  "duracion_s": 151.0,
+  "notas_por_pista": {
+    "sax_tenor": 12,
+    "rhodes": 71,
+    "vibraphone": 7,
+    "bass": 53,
+    "drums": 0,
+    "piano": 63,
+    "strings": 65
+  },
+  "compliance_fails": [],
+  "compliance_warns": [],
+  "avisos_compilador": [
+    "W417: chord_bars/harmonic_rhythm_bars (2) no divide los 13 compases de 'verse_2' (último acorde recortado)"
+  ],
+  "resumen_actividad": {
+    "frases_sax": 2,
+    "rhodes_melodico_por_seccion": {
+      "intro_1": 2,
+      "verse_2": 0,
+      "bridge_3": 0,
+      "outro_4": 3
+    },
+    "vibes_eco_por_seccion": null
+  },
+  "reproduccion": {
+    "regenerar": "python3 scripts/produce.py doc.json --production sax_rhodes --seed 46 --out /home/z/my-project/nucleo_engine_project/output/plan_f2/p02_solos/p02_6_vibes_libre --verify b27861e9eed2b1b37cae641e52d91e2f64254792de77449a9bf4dd58bb4042f0",
+    "fluidsynth_windows": "fluidsynth -ni soundfont.sf2 \"p02_6_vibes_libre.mid\" -F salida.wav -r 44100"
+  }
+}

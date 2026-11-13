@@ -1,0 +1,125 @@
+{
+  "schema": "dark-director/1",
+  "meta": {
+    "title": "Marea Negra",
+    "notes": "Automatic — doom_triphop en D# minor (experimental), 48 compases a 77 BPM: intro_1 (intro, 7), verse_2 (verse, 11), verse_3 (verse, 11), bridge_4 (bridge, 9), verse_5 (verse, 10); solo de vibraphone en bridge_4, fade-out de 2 compases."
+  },
+  "direction": {
+    "identity": "doom_triphop",
+    "accessibility": "balanced"
+  },
+  "global": {
+    "bpm": 77,
+    "seed": 303
+  },
+  "harmony": {
+    "key": "D# minor",
+    "language": "experimental",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "break": [
+        "Ebm9",
+        "Bmaj7"
+      ],
+      "bridge": [
+        "Bmaj7",
+        "Gbmaj9"
+      ],
+      "chorus": [
+        "Bmaj9",
+        "Gbmaj9",
+        "Abm9",
+        "Bb7sus4"
+      ],
+      "intro": [
+        "Ebm9"
+      ],
+      "outro": [
+        "Ebm9"
+      ],
+      "pre_chorus": [
+        "Abm9",
+        "Bb7sus4"
+      ],
+      "verse": [
+        "Ebm9",
+        "Bmaj9",
+        "Abm9",
+        "Bb7sus4"
+      ]
+    }
+  },
+  "structure": [
+    {
+      "id": "intro_1",
+      "type": "intro",
+      "bars": 7,
+      "energy": 0.46,
+      "tension": 0.43,
+      "density": 0.32,
+      "focus": [
+        "vibraphone",
+        "pad",
+        "strings"
+      ],
+      "drums": "air"
+    },
+    {
+      "id": "verse_2",
+      "type": "verse",
+      "bars": 11,
+      "energy": 0.66,
+      "tension": 0.58,
+      "density": 0.52,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "verse_3",
+      "type": "verse",
+      "bars": 11,
+      "energy": 0.66,
+      "tension": 0.58,
+      "density": 0.52,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    },
+    {
+      "id": "bridge_4",
+      "type": "bridge",
+      "bars": 9,
+      "energy": 0.75,
+      "tension": 0.78,
+      "density": 0.57,
+      "focus": [
+        "vibraphone"
+      ],
+      "drums": "light"
+    },
+    {
+      "id": "verse_5",
+      "type": "verse",
+      "bars": 10,
+      "energy": 0.66,
+      "tension": 0.58,
+      "density": 0.52,
+      "focus": [
+        "sax_tenor",
+        "drums"
+      ],
+      "drums": "groove"
+    }
+  ],
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  }
+}

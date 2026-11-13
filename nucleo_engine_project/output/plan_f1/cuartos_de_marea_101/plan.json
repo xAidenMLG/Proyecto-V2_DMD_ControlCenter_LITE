@@ -1,0 +1,132 @@
+{
+  "plan_version": 1,
+  "mode": "guided",
+  "seed": 101,
+  "title": "Cuartos de Marea",
+  "identity": {
+    "style": "dark_triphop",
+    "accessibility": "balanced",
+    "protagonist": "sax_tenor",
+    "palette": [
+      "full"
+    ]
+  },
+  "controls": {
+    "energia": "alta",
+    "forma": "cancion",
+    "duracion": "corta",
+    "armonia": "nocturno",
+    "pulso": "lento_arrastrado",
+    "drums": "presente"
+  },
+  "album_context": null,
+  "form": {
+    "template": "cancion",
+    "sections": [
+      {
+        "id": "intro",
+        "type": "intro",
+        "bars": 4,
+        "energy": 0.3,
+        "tension": 0.2,
+        "density": 0.25,
+        "focus": [
+          "rhodes",
+          "pad"
+        ],
+        "drums": "air"
+      },
+      {
+        "id": "verso_a",
+        "type": "verse",
+        "bars": 8,
+        "energy": 0.5,
+        "tension": 0.35,
+        "density": 0.5,
+        "focus": [
+          "sax_tenor"
+        ],
+        "drums": "groove"
+      },
+      {
+        "id": "coro_a",
+        "type": "chorus",
+        "bars": 8,
+        "energy": 0.75,
+        "tension": 0.45,
+        "density": 0.65,
+        "focus": [
+          "sax_tenor",
+          "bass"
+        ],
+        "drums": "heavy"
+      },
+      {
+        "id": "verso_b",
+        "type": "verse",
+        "bars": 8,
+        "energy": 0.55,
+        "tension": 0.3,
+        "density": 0.4,
+        "focus": [
+          "sax_tenor"
+        ],
+        "drums": "groove"
+      },
+      {
+        "id": "outro",
+        "type": "outro",
+        "bars": 4,
+        "energy": 0.3,
+        "tension": 0.2,
+        "density": 0.25,
+        "focus": [
+          "rhodes"
+        ],
+        "drums": "air"
+      }
+    ]
+  },
+  "ending": {
+    "fade_out": {
+      "enabled": true,
+      "bars": 2
+    }
+  },
+  "harmony": {
+    "key": "D minor",
+    "language": "pop_dream_pop",
+    "harmonic_rhythm_bars": 2,
+    "progressions": {
+      "verse": [
+        "Dm9",
+        "Gm9",
+        "Bbmaj9",
+        "Am7"
+      ],
+      "chorus": [
+        "Bbmaj9",
+        "Fmaj9",
+        "Gm9",
+        "Dm9"
+      ]
+    }
+  },
+  "orchestration": {
+    "profile": "full"
+  },
+  "global": {
+    "bpm": 72
+  },
+  "duration": {
+    "target": "corta",
+    "bars_total": 32
+  },
+  "notes": "plan cancion de referencia para la matriz",
+  "evidence": {
+    "resolved_by": "manual@fase1",
+    "resolved": [],
+    "inputs_hash": "sha256:d9b18e0762568a6cf0482bfe0b2481822a8acaddd7cf2ef059d8bfc92ff7be6a",
+    "created_at": "2026-11-12T00:00:00Z"
+  }
+}
